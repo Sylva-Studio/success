@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/statics/css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" rel="stylesheet"/>
+   
 
   <title>Success Vision | contact-us</title>
 </head>
@@ -55,6 +56,40 @@
 </ul>
 </div>  
 </header>
+
+
+
+
+
+<div class="carousel carousel-slider center" data-indicators="true">
+    <div class="carousel-fixed-item center">
+        <a class="btn waves-effect white grey-text darken-text-2 slide-prev">Prev</a>
+        <a class="btn waves-effect white grey-text darken-text-2">Share</a>
+        <a class="btn waves-effect white grey-text darken-text-2 slide-next">Next</a>
+    </div>
+    <div class="carousel-item red white-text" href="#one!">
+       <div class="carousel-item-style">
+        
+        <h2>First Panel</h2>
+        <p class="white-text">This is your first panel</p>
+       </div>
+    </div>
+    <div class="carousel-item amber white-text" href="#two!">
+      <img src="\statics\images\girl-in-park_q90.jpg" alt="" srcset="">
+        <h2>Second Panel</h2>
+        <p class="white-text">This is your second panel</p>
+    </div>
+    <div class="carousel-item green white-text" href="#three!">
+    <img src="\statics\images\striped-shirt-guy_q90.jpg" alt="" srcset="">
+        <h2>Third Panel</h2>
+        <p class="white-text">This is your third panel</p>
+    </div>
+    <div class="carousel-item blue white-text" href="#four!">
+       <img src="\statics\images\girl-in-park_q90.jpg" alt="" srcset="">
+        <h2>Fourth Panel</h2>
+        <p class="red-text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam impedit iste doloribus est quisquam, dolor dolores dolore tempore labore eum? Consequuntur quidem similique nemo, eveniet vitae totam obcaecati nesciunt mollitia! This is your fourth panel</p>
+    </div>
+</div>
   
 <footer class="footer">
 <div class="mail-list">
@@ -74,5 +109,13 @@
 
 
 <script src="\statics\js\index.js"></script>
+<script>
+  $(document).ready(function(){
+        $('.carousel').carousel();
+    });
+    $('.carousel.carousel-slider').carousel({fullWidth: true});
+    $('.slide-prev').carousel('prev');
+    $('.slide-next').carousel('next');
+</script>
 </body>
 </html>

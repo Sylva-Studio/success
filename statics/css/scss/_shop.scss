@@ -1,54 +1,56 @@
-.card{
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
- padding: .1em;
- grid-gap:.5em;
- font-size: 1.1em;
- text-align: center;
 
-
-
- .shop_card{
-  padding: .2em 1em;
-  display: flex;
-  flex-direction: column;
-  height: 15em;
-  justify-content: center;
-  transition: all .5s linear;
- 
-
-  & > * + *{
-    margin-top: 1em;
-  }
-
-
-  .shop_item_info{
+  .card-style{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
+    padding: .1em;
+    grid-gap:.5em;
+    font-size: 1.1em;
     text-align: center;
-  }
- 
-  .shop-image{
-    height: 8em;
-    display: flex;
-    padding: 1em;
-
-    img{
-      
-      width: 100%;
-      display: block;
-      
+   
+   
+    .shop_card{
+     padding: .2em 1em;
+     display: flex;
+     flex-direction: column;
+     height: 15em;
+     justify-content: center;
+     transition: all .5s linear;
+     
     
+   
+     & > * + *{
+       margin-top: 1em;
+     }
+   
+   
+     .shop_item_info{
+       text-align: center;
+     }
+    
+     .shop-image{
+       height: 8em;
+       display: flex;
+       padding: 1em;
+   
+       img{
+         
+         width: 100%;
+         display: block;
+         
+       
+       }
+     }
     }
-  }
- }
-
- .shop-card-mobile{
-  display: none;
-}
-
-}
+   
+    .shop-card-mobile{
+     display: none;
+   }
+   
+   }
+   
 
 @media screen and (min-width:40em){
-  .card{
+  .card-style{
     width: 95%;
     margin: auto;
   }
@@ -59,7 +61,7 @@
 }
 
 @media screen and (max-width:40em){
-  .card{
+  .card-style{
     .shop-card-mobile{
       margin-top: 2em;
       display: block;

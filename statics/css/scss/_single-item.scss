@@ -2,20 +2,20 @@
   margin-top: 5em;
  
 
-  .carousel{
-    padding-top: 5em;
-    width: 30em;
-    height: 20em;
-    margin:  2em auto;
-    background-color: rgb(253, 232, 191);
+  // .carousel{
+  //   padding-top: 5em;
+  //   width: 30em;
+  //   height: 20em;
+  //   margin:  2em auto;
+  //   background-color: rgb(253, 232, 191);
 
 
-    .carousel-indicators{
-      .active{
-        background-color: $main-style;
-      }
+  //   .carousel-indicators{
+  //     .active{
+  //       background-color: $main-style;
+  //     }
     
-    }
+  //   }
 
     
     
@@ -92,10 +92,10 @@
 
 @media screen and (max-width:40em){
   #single-item{
-    .carousel{
-      width: 20em;
-      height: 18em;
-    }
+    // .carousel{
+    //   width: 20em;
+    //   height: 18em;
+    // }
     .single-item-info-inner{
       width: 100%;
     padding: 1em;

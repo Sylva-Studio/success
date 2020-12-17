@@ -5,19 +5,21 @@
   <link rel="stylesheet" href="/statics/css/style.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>       
 
   <title>Success Vision | Home</title>
 </head>
-<body>
+<body >
  <header>
  <div class="nav-style">
- <nav id="nav_bar">
+ <nav id="nav_bar" class="z-depth-0">
  <div class="data_bar">
  <div class="menu-bar">
   <div class="hamburger"></div>
@@ -38,17 +40,18 @@
     </div>
     <div class="shopping_bar">
     <i class="fas fa-shopping-bag"></i>
+    <a href="\pages\cart.html"><i class="fas fa-shopping-bag"></i></a>
     </div>
   </div>
  </nav>
  </div>
 <div class="hero-page">
 <div class="hero-image">
-<img src="/statics\images\girl-in-park_q90.jpg" alt="" >
+<img src="/statics\images\girl-in-park_q90-removebg-preview.png" alt="" >
 </div>
 <div class="hero-title">
-<h2>Glasses in about 2 days when you shop online (plus free shipping)!</h2>
-<button>Shop Now</button>
+<h2 class="title-move">Glasses in about 2 days when you shop online (plus free shipping)!</h2>
+<button class="btn waves-effect mybtn">Shop Now</button>
 </div>
 </div>
 
@@ -68,7 +71,7 @@
   </div>  
   </header>
 
-  <section class="section-grid">
+  <section >
     <div class="title">
     <h2 class="title_inner">
     Best Seller
@@ -76,7 +79,7 @@
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos repudiandae.</p>
     <div class="title_underline"></div>
     </div>
-    <article class="card">
+    <article class="card-style z-depth-0">
 
       <div class="shop_card shop-card-mobile">
       <a href="\pages\single-item.html">
@@ -132,16 +135,16 @@
       
     </article>
   </section>
-  <section class="section-grid ">
+  <section id="section-grid-second">
   
-  <article class="card location-card destop-card ">
+  <article class="card-style location-card destop-card z-depth-0">
   <div class="location">
   <div class="location-img ">
   <img src="\statics\images\striped-shirt-guy_q90.jpg" alt="" >
   </div>
   <h2>Location</h2>
   <p>Glasses in about an hour when you shop in store!</p>
-  <button>Locations</button>
+  <button class="btn waves-effect mybtn">Locations</button>
   </div>
   <div class="on-sale">
   <div class="on-sale-img">
@@ -149,7 +152,7 @@
   </div>
   <h2>On Sale</h2>
   <p>Glasses in about an hour when you shop in store!</p>
-  <button>Shop Now</button>
+  <button class="btn waves-effect mybtn">Shop Now</button>
   </div>
   <div class="location ">
   <div class="location-img">
@@ -157,57 +160,36 @@
   </div>
   <h2>Location</h2>
   <p>Glasses in about an hour when you shop in store!</p>
-  <button> Locations</button>
+  <button class="btn waves-effect mybtn"> Locations</button>
   </div>
   </article>
-  <article class="card location-card mobile-card">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-     <div class="location">
-      <div class="location-img ">
-      <img src="\statics\images\blue-shirt-man_q90.jpg" alt="New York">
-      </div>
-      <h2>Location</h2>
-      <p>Glasses in about an hour when you shop in store!</p>
-      <button>Locations</button>
-      </div>
+  
+  <article class="card-style location-card mobile-card">
+    <div class="carousel carousel-slider center">
+    <div class="carousel-fixed-item center">
+    <img src="\statics\images\striped-shirt-guy_q90.jpg" alt="" >
+      <a class="btn waves-effect mybtn">button</a>
     </div>
-
-    <div class="item">
-      <div class="on-sale">
-      <div class="on-sale-img">
-      <img src="\statics\images\girl-in-park_q90.jpg" alt="" >
-      </div>
-      <h2>On Sale</h2>
-      <p>Glasses in about an hour when you shop in store!</p>
-      <button>Shop Now</button>
-      </div>
-      
+    <div class="carousel-item red white-text" href="#one!">
+      <img src="\statics\images\blue-shirt-man_q90.jpg" alt="" >
+      <h2>First Panel</h2>
+      <p class="white-text">This is your first panel</p>
     </div>
-      
-
-    <div class="item">
-      <div class="location">
-      <div class="location-img ">
-      <img src="\statics\images\striped-shirt-guy_q90.jpg" alt="New York">
-      </div>
-      <h2>Location</h2>
-      <p>Glasses in about an hour when you shop in store!</p>
-      <button>Locations</button>
-      </div>
-      </div>
+    <div class="carousel-item amber white-text" href="#two!">
+    <img src="\statics\images\girl-in-park_q90.jpg" alt="" >
+      <h2>Second Panel</h2>
+      <p class="white-text">This is your second panel</p>
+    </div>
+    <div class="carousel-item green red-text" href="#three!">
+      <h2>Third Panel</h2>
+      <p class="white-text">This is your third panel</p>
+    </div>
+    <div class="carousel-item blue white-text" href="#four!">
+    <img src="\statics\images\blue-shirt-man_q90.jpg" alt="" >
+      <h2>Fourth Panel</h2>
+      <p class="white-text">This is your fourth panel</p>
     </div>
   </div>
-
 </div>
   </article>
   </section>
@@ -258,7 +240,7 @@
   </div>
   </div>
    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque earum aliquid, illum ducimus distinctio possimus voluptates similique dolore repellat tenetur recusandae dolorem, doloribus ex! Asperiores necessitatibus quos quas cupiditate quis.</p>
-  <button>More about us</button>
+  <button class="btn waves-effect mybtn" >More about us</button>
   </div>
   </div>
 </section>
@@ -290,11 +272,15 @@
  <footer class="footer">
 <div class="mail-list">
 <div class="mail-list-inner">
-<h3>Join Our Mailing List</h3>
+<h2>Join Our Mailing List</h2>
 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, nesciunt. </p>
+  <div class="form-style">
+  <div class="mail-icon"><i class="far fa-envelope"></i></div>
   <form >
     <input type="text" placeholder="Email address">
   </form>
+  <div class="move-icon"><i class="fas fa-chevron-right"></i></div>
+  </div>
 </div>
 </div>
 <div class="main-footer">
@@ -303,7 +289,19 @@
 </div>
 </div>
 </footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="\statics\js\index.js"></script>
+
+<script>
+ $(document).ready(function(){
+        $('.carousel').carousel();
+    });
+    $('.carousel.carousel-slider').carousel({fullWidth: true});
+    $('.slide-prev').carousel('prev');
+    $('.slide-next').carousel('next');
+</script>
 </body>
 </html>
 

@@ -3,6 +3,8 @@
 @import "./scss/user-profile";
 @import "./scss/search";
 @import "./scss/single-item";
+@import "./scss/cart";
+@import "./scss/gender-search";
 
 :root {
   box-sizing: border-box;
@@ -16,25 +18,29 @@
   padding: 0;
 }
 
-body {
-  font-family: 'Ubuntu', sans-serif !important;
-  background-color: rgb(247, 247, 247);
-  // box-shadow: ;
+ body {
+  font-family: 'Comfortaa', sans-serif !important;
+  background-color: violet !important;
+  
+ 
+  .carousel {
+    height: 50em;
+    
+    .carousel-item{
+      width: 30em !important;
+    }
+  }
 
   h2{
     font-weight: 700 !important;
+    font-size: 2em;
   }
 
-  #box{
 
-    width: 40em;
-    height: 30em;
-    margin: 6em auto;
-    background-color: orchid;
-  }
 
   .location-card {
     margin-top: 3em;
+    
 
     .hide-on-destop {
       display: none;
@@ -55,23 +61,26 @@ body {
     }
   }
 
-  button {
+ .mybtn{
+   margin-top: .5em;
     outline: none;
-    background-color: transparent;
-    border: 0.1em solid $main-green;
-    color: $main-green;
-    font-size: 1.2em;
-    border-radius: 0.5em;
+    background-color: $main-green;
+    color: $main-white;
     box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.2);
-    padding: 0.2em 0.5em;
     transition: all 0.5s linear;
+    padding: 0 2em 2em 2em !important;
+    font-weight: bold;
+    font-size: 1.2em;
 
     &:hover {
-      color: white;
-      background-color: $main-green;
+      color: $main-green;
+      background-color: transparent;
+      border: 0.1em solid $main-green;
       border: none;
     }
   }
+
+ 
 
   .title {
     width: 80%;
@@ -80,32 +89,36 @@ body {
 
     p{
       text-align: center;
+     
     }
 
     .title_inner {
       text-align: center;
-      font-weight: bold;
-      color: rgb(83, 83, 83);
     }
 
     .title_underline {
       width: 5em;
       height: 0.2em;
       margin: auto;
+      margin-top: 1em;
       background-color: $main-style;
       display: flex;
     }
   }
 
+  
+
   .hero-page {
     width: 100%;
     position: relative;
+    
 
     .hero-image {
       img {
         width: 100%;
-        height: 30em;
+        height: 25em;
       }
+      
     }
 
     .hero-title {
@@ -113,17 +126,25 @@ body {
       top: 8em;
       left: 2em;
       width: 40%;
-      color: $main-white;
+      color: $main-green;
       text-align: center;
       text-shadow: 0.2em 0.2em 0.1em rgba(0, 0, 0, 0.5);
+
+      .title-move{
+        transform: translateX(-110%);
+        transition: all .5s linear;
+    
+        &.title-open{
+          transform: translateX(0);
+        }
+      }
 
       button {
         background-color: $main-green;
         color: $main-white;
 
         &:hover {
-          background-color: transparent;
-          border: 0.1em solid $main-green;
+          background-color: $main-white;
           color: $main-green;
         }
       }
@@ -137,6 +158,7 @@ body {
   header {
     background-color: $main-white;
     position: relative;
+    box-shadow: none !important;
 
     .nav-links {
       position: fixed;
@@ -194,6 +216,7 @@ body {
       height: 10vh;
       background-color: $main-white;
       z-index: 20;
+      box-shadow: none !important;
     }
 
     .hamburger {
@@ -250,12 +273,19 @@ body {
       color: $main-green;
       font-size: 1.5em;
       background-color: $main-white;
+      box-shadow: none !important;
+      padding-top: .5em;
       
 
       .data_bar {
         display: flex;
         height: 100%;
         align-items: center;
+
+        .menu-bar{
+          
+          margin-bottom: .5em;
+        }
 
         .search {
           margin-left: 1em;
@@ -270,14 +300,25 @@ body {
           img {
             width: 10em;
             height: 2em;
-            margin-left: 1em;
+            margin: 0 1em 1em 1em;
+            display: block;
           }
         }
       }
 
+
       .social_bar {
         display: flex;
         cursor: pointer;
+
+        
+      .shopping_bar{
+        
+          i{
+            color: $main-green;
+          }
+        
+      }
 
         div {
           margin-left: 1em;
@@ -289,6 +330,7 @@ body {
     margin-top: 3em;
 
     .mail-list {
+      padding: 2em;
       background-color: $main-style;
       clip-path: polygon(17% 34%, 100% 24%, 100% 100%, 0 100%, 0 23%);
       width: 100%;
@@ -305,19 +347,43 @@ body {
         justify-content: center;
         align-items: center;
         margin: auto;
-        padding-top: 2em;
+        padding-top: 4em;
+        
 
-        form {
-          input {
-            width: 20em;
-            height: 2em;
-            outline: none;
-            border: none;
-            font-size: 1.3em;
-            padding-left: 0.5em;
-            border-radius: 0.2em;
+        .form-style{
+          display: flex;
+          justify-content: center;
+          background-color: $main-white;
+          border-radius: 0.2em;
+          width: 60%;
+          align-items: center;
+          margin: auto !important;
+          height: 3em;
+
+          form {
+            margin-top: 1em;
+            flex: 8;
+            input {
+              outline: none;
+              border: none;
+              padding-bottom: .5em;
+              
+             &::placeholder{
+               color: rgb(117, 117, 117);
+             }
+            }
+          }
+
+          .mail-icon, .move-icon{
+            flex: 1;
+            font-size: 1.5em;
+          }
+
+          .mail-icon{
+            padding-left: 1em;
           }
         }
+
       }
     }
 
@@ -325,6 +391,7 @@ body {
       background-color: $main-green;
       width: 100%;
       height: 10em;
+
     }
   }
   .mobile-card {
@@ -365,7 +432,8 @@ body {
         p {
           letter-spacing: 0.1em;
           word-spacing: 0.1em;
-          font-size: 1.2em;
+          font-size: 1.3em;
+         
         }
 
         button {
@@ -410,14 +478,26 @@ body {
 @media screen and (max-width: 40em) {
   body {
     font-size: .8em;
+
+    #nav_bar{
+      .data_bar{
+        .menu-bar{
+          font-size: 1.3em;
+          margin: 0 1em .5em 0;
+        }
+      }
+    }
     .footer{
       
       .mail-list{
-       padding-top: 2em ;
+       padding: 2em ;
         .mail-list-inner{
-          form{
-            input{
-              width: 18em;
+          .form-style{
+            width: 100%;
+            form{
+              input{
+                padding-left: .5em;
+              }
             }
           }
         }
@@ -439,7 +519,12 @@ body {
 
         .thanks-info {
           padding: 2em;
-          padding-bottom: 9em;
+          padding-bottom: 12em;
+
+          
+          p{
+            font-size: 1.5em;
+          }
         }
       }
     }
@@ -474,7 +559,7 @@ body {
   .search {
     display: none;
   }
-  .section-grid {
+  #section-grid-second {
     .location-card {
       
       img {

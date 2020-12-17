@@ -18,23 +18,18 @@ userBtn.addEventListener('click', ()=>{
 
 const box = document.querySelector('#box')
 
+const options = {
+  rootmargin:"-100px"
+}
 const callbackFun = (enteries)=>{
-  console.log(enteries[0])
+  
 }
 
-const newObserver = new IntersectionObserver(callbackFun)
+const newObserver = new IntersectionObserver(callbackFun, options)
 
 newObserver.observe(box)
 
-document.addEventListener('DOMContentLoaded', function() {
-  const elems = document.querySelectorAll('.carousel');
-  const instances = M.Carousel.init(elems, options);
-});
 
-const instance = M.Carousel.init({
-  fullWidth: true,
-  indicators: true
-});
 
 
 

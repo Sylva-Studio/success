@@ -1,80 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/statics/css/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-  <title>Success Vision | contact-us</title>
+  <title>JS Bin</title>
+    <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 </head>
 <body>
-<header>
- <div class="nav-style">
- <nav id="nav_bar">
- <div class="data_bar">
- <div class="menu-bar">
-  <div class="hamburger"></div>
- </div>
- <div class="search">
-  <a href="\pages\search.html"><i class="fas fa-search"></i></a>
-  </div>
- </div>
-  <div class="logo">
-  <a href="">
-   <img src="/statics\images\logo.png" alt="" >
-  </a>
-  </div>
-
-  <div class="social_bar">
-    <div class="profile_icon">
-    <i class="far fa-user"></i>
+  <div class="carousel">
+   
+    <div class="carousel-item">
+      <div class="card">
+        <div class="card-image">
+         <img src="\statics\images\striped-shirt-guy_q90.jpg">
+        </div>
+        <div class="card-content">
+          This is a content
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
     </div>
-    <div class="shopping_bar">
-    <i class="fas fa-shopping-bag"></i>
+    <div class="carousel-item">
+      <div class="card">
+        <div class="card-image">
+         <img src="\statics\images\blue-shirt-man_q90.jpg">
+        </div>
+        <div class="card-content">
+         <h2>Locations</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum.</p>
+        </div>
+        <div class="card-action">
+          <a href="#"><button>Locations</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card">
+        <div class="card-image">
+         <img src="\statics\images\girl-in-park_q90.jpg">
+        </div>
+        <div class="card-content">
+          This is a content
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>      
     </div>
   </div>
- </nav>
- </div>
-
-<div class="nav-links-style">
-<ul class="nav-links">
-  <li><a href="\pages\search.html" class="nav-link search-link"><i class="fas fa-search"></i> Search</a></li>
-  <li><a href="\pages\women.html" class="nav-link"><i class="fas fa-female"></i> Women</a></li>
-  <li><a href="\pages\men.html" class="nav-link"><i class="fas fa-male"></i> Men</a></li>
-  <li><a href="\pages\kids.html" class="nav-link"><i class="fas fa-child"></i> Kids</a></li>
-  <li><a href="\pages\locations.html" class="nav-link"> <i class="fas fa-map-marker-alt"></i> Locations</a></li>
-  <li><a href="\pages\gift-cards.html" class="nav-link"> <i class="fas fa-gift"></i> Gift Cards</a></li>
-  <li><a href="\pages\specials.html" class="nav-link"><i class="fas fa-user-tag"></i> Specials</a></li>
-  <li><a href="\pages\about-us.html" class="nav-link"> <i class="fas fa-address-card"></i> About Us</a></li>
-  <li><a href="\pages\contact-us.html" class="nav-link"> <i class="fas fa-address-book"></i> Contact Us</a></li>
-  <li><a href="\pages\join-us.html" class="nav-link"> <i class="fas fa-restroom"></i> Join The Team</a></li>
-</ul>
-</div>  
-</header>
-  <div id="box">
-<h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, accusantium aliquid perspiciatis at sint omnis porro ratione architecto, sapiente hic culpa laboriosam, expedita provident perferendis aperiam dicta. Suscipit, aspernatur autem.</h1>
-</div>
-<footer class="footer">
-<div class="mail-list">
-<div class="mail-list-inner">
-<h3>Join Our Mailing List</h3>
-  <form >
-    <input type="text" placeholder="Email address">
-  </form>
-</div>
-</div>
-<div class="main-footer">
-<div class="main-footer-inner">
-
-</div>
-</div>
-</footer>
-
-
-<script src="\statics\js\index.js"></script>
+  <script>$(document).ready(function(){$('.carousel').carousel();});</script>
 </body>
 </html>
