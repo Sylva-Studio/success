@@ -1,0 +1,119 @@
+#single-item{
+  margin-top: 5em;
+ 
+
+  .carousel{
+    padding-top: 5em;
+    width: 30em;
+    height: 20em;
+    margin:  2em auto;
+    background-color: rgb(253, 232, 191);
+
+
+    .carousel-indicators{
+      .active{
+        background-color: $main-style;
+      }
+    
+    }
+
+    
+    
+  }
+
+  .single-item-info-inner{
+    font-size: 2em !important;
+    width: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .item-things{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+  }
+
+  .item-btn{
+
+    width: 30%;
+    margin: 1em auto;
+   
+
+
+    button{
+      width: 100%;
+      background-color: $main-style;
+      border: none;
+      color: $main-white;
+      
+      &:hover{
+        background-color: darken($main-style, 5%);
+      }
+    }
+
+  }
+  .item-fav{
+    border: .03em solid $main-style;
+    padding: .5em;
+    height: 1.2em;
+    position: relative;
+    width: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .2em;
+
+    i{
+      font-size: 2.1em;
+      color: $main-style;
+      
+    }
+  }
+  .item-desc{
+    width: 80%;
+    margin:auto;
+    padding-top: 2em;
+    h4{
+      font-weight: bold;
+    }
+
+    h6{
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+  }
+  
+}
+
+@media screen and (max-width:40em){
+  #single-item{
+    .carousel{
+      width: 20em;
+      height: 18em;
+    }
+    .single-item-info-inner{
+      width: 100%;
+    padding: 1em;
+
+    .item-things{
+      width: 70%;
+    }
+
+    }
+    .item-btn{
+      width: 70%;
+      button{
+        padding: 1em;
+      }
+    }
+  }
+  .item-desc{
+    width: 80%;
+    margin: auto;
+  }
+}

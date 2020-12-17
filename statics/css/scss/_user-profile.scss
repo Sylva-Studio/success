@@ -1,0 +1,73 @@
+.user-profile{
+ transform: translateY(-110%);
+  width: 40%;
+  margin: auto;
+  padding: 1em;
+  background-color: $main-white;
+  position: fixed;
+  top: 3em;
+  right: 1em;
+  transition: all .5s linear;
+  z-index: 100011;
+
+  .login-form, .create-form{
+    
+    input{
+      width: 100%;
+      outline: none;
+      border-radius: .5em;
+      margin-bottom: .5em;
+      height: 2.8em;
+      border: .1em solid gray;
+    }
+    .input-btn{
+      border: none;
+      color: $main-white;
+      background-color: $main-green;
+      transition: all .5s linear;
+
+      &:hover{
+        background-color: transparent;
+        border: .1em solid $main-green;
+        color: $main-green;
+      }
+    }
+  }
+  .login-form{
+
+    margin-bottom: 2em;
+
+    .form-info{
+      display: flex;
+      justify-content: space-between;
+      
+    }
+    .checkbox{
+      width: 10%;
+      height: 1em;
+     ;
+      
+    }
+    input:checked{
+      background-color: $main-style !important;
+    }
+    
+    .checkbox-div{
+      display: flex;
+      flex: 1;
+    }
+  }
+
+}
+
+.user-profile.user-open{
+  transform: translateY(0%);
+}
+
+@media screen and (max-width:40em){
+  .user-profile{
+    width: 90%;
+    top: 4em;
+  }
+}
+
