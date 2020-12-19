@@ -16,19 +16,31 @@ userBtn.addEventListener('click', ()=>{
 })
 
 
-const box = document.querySelector('#box')
+const box = document.querySelector('.title-move')
 
 const options = {
-  rootmargin:"-100px"
+  rootmargin:"100px"
 }
 const callbackFun = (enteries)=>{
-  
+  enteries.forEach(entry => {
+    entry.target.classList.add('title-open')
+  });
 }
 
 const newObserver = new IntersectionObserver(callbackFun, options)
 
 newObserver.observe(box)
 
+// const promo = document.querySelector('.promo-nav')
+
+// const promoFun = enteries => {
+//   enteries.forEach(entry => {
+//     entry.target.classList.toggle('promo-open')
+//   })
+// }
+// const promoObserve = new IntersectionObserver(promoFun, {threshold:0.8})
+
+// promoObserve.observe(promo)
 
 
 

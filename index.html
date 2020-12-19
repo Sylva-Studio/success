@@ -5,21 +5,46 @@
   <link rel="stylesheet" href="/statics/css/style.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"> 
+
+  <!-- swiper css --> 
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>   
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>       
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>   
 
   <title>Success Vision | Home</title>
 </head>
 <body >
+ <div class="container">
+  <div class="container-inner">
+  <div class="container-slider">
  <header>
+ <div class="promo-nav z-depth-0">
+ <div class="nav z-depth-0">
+  <h5>Glasses in an hour when you shop in store!</h5>
+  <div class="promo-btn">
+  <a href="">
+  <button class="mybtn btn waves-effect">Shop now</button>
+  </a>
+  </div>
+  <div class="terms">
+  <a href="">
+  <h5>Terms and Condition apply</h5>
+  </a>
+  </div>
+ </div>
+ </div>
  <div class="nav-style">
- <nav id="nav_bar" class="z-depth-0">
+ <nav  class="nav_bar z-depth-0">
  <div class="data_bar">
  <div class="menu-bar">
   <div class="hamburger"></div>
@@ -39,7 +64,6 @@
     <i class="far fa-user"></i>
     </div>
     <div class="shopping_bar">
-    <i class="fas fa-shopping-bag"></i>
     <a href="\pages\cart.html"><i class="fas fa-shopping-bag"></i></a>
     </div>
   </div>
@@ -50,7 +74,7 @@
 <img src="/statics\images\girl-in-park_q90-removebg-preview.png" alt="" >
 </div>
 <div class="hero-title">
-<h2 class="title-move">Glasses in about 2 days when you shop online (plus free shipping)!</h2>
+<h2 class="title-move">Glasses in about <span>2 days </span>when you shop online <span class="free">plus free shipping</span></h2>
 <button class="btn waves-effect mybtn">Shop Now</button>
 </div>
 </div>
@@ -68,9 +92,10 @@
   <li><a href="\pages\contact-us.html" class="nav-link"> <i class="fas fa-address-book"></i> Contact Us</a></li>
   <li><a href="\pages\join-us.html" class="nav-link"> <i class="fas fa-restroom"></i> Join The Team</a></li>
   </ul>
+  <div class="nav-links-scrollbar"></div>
   </div>  
   </header>
-
+ 
   <section >
     <div class="title">
     <h2 class="title_inner">
@@ -128,10 +153,6 @@
           <div class="item_price">$90.01</div>
         </div> 
       </div>
-
-     
-      
-      
       
     </article>
   </section>
@@ -144,7 +165,9 @@
   </div>
   <h2>Location</h2>
   <p>Glasses in about an hour when you shop in store!</p>
-  <button class="btn waves-effect mybtn">Locations</button>
+<a href="\pages\search.html">
+          <button class="btn waves-effect mybtn">Shop now</button>
+          </a>
   </div>
   <div class="on-sale">
   <div class="on-sale-img">
@@ -152,7 +175,9 @@
   </div>
   <h2>On Sale</h2>
   <p>Glasses in about an hour when you shop in store!</p>
-  <button class="btn waves-effect mybtn">Shop Now</button>
+  <a href="\pages\search.html">
+          <button class="btn waves-effect mybtn">Shop now</button>
+          </a>
   </div>
   <div class="location ">
   <div class="location-img">
@@ -160,37 +185,62 @@
   </div>
   <h2>Location</h2>
   <p>Glasses in about an hour when you shop in store!</p>
-  <button class="btn waves-effect mybtn"> Locations</button>
+  <a href="\pages\search.html">
+          <button class="btn waves-effect mybtn">Shop now</button>
+          </a>
   </div>
   </article>
   
-  <article class="card-style location-card mobile-card">
-    <div class="carousel carousel-slider center">
-    <div class="carousel-fixed-item center">
-    <img src="\statics\images\striped-shirt-guy_q90.jpg" alt="" >
-      <a class="btn waves-effect mybtn">button</a>
+  <article class=" location-card mobile-card">
+     <div class="carousel">
+   
+    <div class="carousel-item">
+      <div class="card">
+        <div class="card-image">
+         <img src="\statics\images\striped-shirt-guy_q90.jpg">
+        </div>
+        <div class="card-content">
+         <h4>On Sale</h4>
+        </div>
+        <div class="card-action">
+          <a href="\pages\search.html">
+          <button class="btn waves-effect mybtn">Shop now</button>
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="carousel-item red white-text" href="#one!">
-      <img src="\statics\images\blue-shirt-man_q90.jpg" alt="" >
-      <h2>First Panel</h2>
-      <p class="white-text">This is your first panel</p>
+    <div class="carousel-item">
+      <div class="card">
+        <div class="card-image">
+         <img src="\statics\images\blue-shirt-man_q90.jpg">
+        </div>
+        <div class="card-content">
+         <h4>Locations</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum.</p>
+        </div>
+        <div class="card-action">
+         <a href="\pages\search.html">
+          <button class="btn waves-effect mybtn">Shop now</button>
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="carousel-item amber white-text" href="#two!">
-    <img src="\statics\images\girl-in-park_q90.jpg" alt="" >
-      <h2>Second Panel</h2>
-      <p class="white-text">This is your second panel</p>
-    </div>
-    <div class="carousel-item green red-text" href="#three!">
-      <h2>Third Panel</h2>
-      <p class="white-text">This is your third panel</p>
-    </div>
-    <div class="carousel-item blue white-text" href="#four!">
-    <img src="\statics\images\blue-shirt-man_q90.jpg" alt="" >
-      <h2>Fourth Panel</h2>
-      <p class="white-text">This is your fourth panel</p>
+    <div class="carousel-item">
+      <div class="card">
+        <div class="card-image">
+         <img src="\statics\images\girl-in-park_q90.jpg">
+        </div>
+        <div class="card-content">
+          <h4>On Sale</h4>
+        </div>
+        <div class="card-action">
+          <a href="\pages\search.html">
+          <button class="btn waves-effect mybtn">Shop now</button>
+          </a>
+        </div>
+      </div>      
     </div>
   </div>
-</div>
   </article>
   </section>
   <section >
@@ -268,7 +318,8 @@
   </div>
 </div>
 </section>
- 
+
+
  <footer class="footer">
 <div class="mail-list">
 <div class="mail-list-inner">
@@ -290,18 +341,25 @@
 </div>
 </footer>
 
+ </div>
+ </div>
+ <div class="container-scrollbar"></div>
+ </div>
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="\statics\js\index.js"></script>
 
+ 
 <script>
- $(document).ready(function(){
-        $('.carousel').carousel();
+    var swiper = new Swiper('.container', {
+      direction: 'vertical',
+      slidesPerView: 'auto',
+      freeMode: true,
+      scrollbar: {
+        el: '.container-scrollbar',
+      },
+      mousewheel: true,
     });
-    $('.carousel.carousel-slider').carousel({fullWidth: true});
-    $('.slide-prev').carousel('prev');
-    $('.slide-next').carousel('next');
-</script>
+  </script>
 </body>
 </html>
 

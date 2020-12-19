@@ -4,6 +4,7 @@
 @import "./scss/search";
 @import "./scss/single-item";
 @import "./scss/cart";
+@import "./scss/animate";
 @import "./scss/gender-search";
 
 :root {
@@ -17,19 +18,23 @@
   margin: 0;
   padding: 0;
 }
-
+  html, body{
+    position: relative;
+    height: 100%;
+  }
  body {
   font-family: 'Comfortaa', sans-serif !important;
-  background-color: violet !important;
-  
- 
-  .carousel {
-    height: 50em;
-    
-    .carousel-item{
-      width: 30em !important;
+
+  .container{
+    width: 100%;
+    height: 100%;
+
+    .container-slider{
+      height: auto;
     }
   }
+ 
+  
 
   h2{
     font-weight: 700 !important;
@@ -68,9 +73,10 @@
     color: $main-white;
     box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.2);
     transition: all 0.5s linear;
-    padding: 0 2em 2em 2em !important;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1em;
+    display: flex;
+   
 
     &:hover {
       color: $main-green;
@@ -109,24 +115,41 @@
   
 
   .hero-page {
+    margin-top: 5em;
     width: 100%;
     position: relative;
+    background-color: $main-green;
+    
+
+    span{
+      color: $main-style;
+      font-size: 1.1em;
+      display: block;
+      padding: .4em;
+    }
+
+    .free{
+      display: block;
+      font-size: 1em;
+      padding:  .1em 0;
+      line-height: 1em;
+    }
     
 
     .hero-image {
       img {
         width: 100%;
-        height: 25em;
+        height: 29em;
       }
       
     }
 
     .hero-title {
       position: absolute;
-      top: 8em;
+      top: 6em;
       left: 2em;
       width: 40%;
-      color: $main-green;
+      color: $main-white;
       text-align: center;
       text-shadow: 0.2em 0.2em 0.1em rgba(0, 0, 0, 0.5);
 
@@ -160,6 +183,10 @@
     position: relative;
     box-shadow: none !important;
 
+    .nav-links-scrollbar{
+      background-color: $main-green;
+    }
+
     .nav-links {
       position: fixed;
       top: 4em;
@@ -170,7 +197,6 @@
       flex-direction: column;
       list-style: none;
       margin: auto;
-      overflow: auto;
       transform: translateX(-110%);
       transition: all 0.5s ease-in-out;
       z-index: 1000;
@@ -197,6 +223,7 @@
         font-size: 1.2em;
         display: block;
         transition: all 0.4s ease-in-out;
+        font-weight: 700;
 
         &:hover {
           color: $green-lite;
@@ -209,20 +236,14 @@
       }
     }
 
-    .nav-style {
-      position: fixed;
-      width: 100%;
-      top: 0;
-      height: 10vh;
-      background-color: $main-white;
-      z-index: 20;
-      box-shadow: none !important;
-    }
+   
 
     .hamburger {
       position: relative;
       cursor: pointer;
       transition: 0.5s linear;
+      margin-bottom: .5em;
+      
     }
 
     .hamburger,
@@ -263,9 +284,70 @@
       opacity: 0;
     }
 
-    #nav_bar {
+    .promo-nav{
+      
+      width: 100%;
+      background-color: rgb(0, 0, 0);
+      height: 8vh;
+      position: fixed;
+      top: 0;
+      z-index: 21;
+
+      .nav{
+        height: 5vh;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        
+        padding: 1.5em;
+        margin: auto;
+
+        
+        a{
+          color: $main-white;
+
+          button{
+           width: 8em;
+            height: 1.5em;
+            margin: 0 1em ;
+            font-size: .8em;
+            padding: 1.3em .5em 1em .5em;
+            align-items: center;
+
+            &:hover{
+              background-color: $main-white;
+              color: $main-green;
+            }
+          }
+        }
+        h5{
+          font-size: .8em;
+          
+          font-weight: bold;
+        }
+      }
+      &.promo-open{
+        transform: translateY(-120%);
+      }
+    }
+
+    
+
+    .nav-style {
+      position: fixed;
+      width: 100%;
+      top: 3em;
+      height: 8vh;
+      background-color: $main-white;
+      z-index: 20;
+      box-shadow: .1em .1em .1em rgba(0, 0, 0, 0.1);
+      
+    }
+
+    .nav_bar {
       display: flex;
-      height: 10vh;
       width: 80%;
       margin: auto;
       align-items: center;
@@ -273,8 +355,10 @@
       color: $main-green;
       font-size: 1.5em;
       background-color: $main-white;
-      box-shadow: none !important;
+      height: 8vh;
       padding-top: .5em;
+    
+      
       
 
       .data_bar {
@@ -282,10 +366,10 @@
         height: 100%;
         align-items: center;
 
-        .menu-bar{
+        // .menu-bar{
           
-          margin-bottom: .5em;
-        }
+        //   margin-bottom: .5em;
+        // }
 
         .search {
           margin-left: 1em;
@@ -299,8 +383,8 @@
         a {
           img {
             width: 10em;
-            height: 2em;
-            margin: 0 1em 1em 1em;
+            height: 1.5em;
+           margin: .5em 0 1em 0;
             display: block;
           }
         }
@@ -478,8 +562,22 @@
 @media screen and (max-width: 40em) {
   body {
     font-size: .8em;
-
-    #nav_bar{
+    .promo-nav{
+      .promo-btn, .terms{
+        display: none;
+      }
+      .nav{
+        h5{
+          margin-top: 3em;
+          font-size: 1em !important;
+        }
+      }
+    }
+    .nav-style{
+      top: 4.6em !important;
+    }
+    .nav_bar{
+      
       .data_bar{
         .menu-bar{
           font-size: 1.3em;
@@ -541,10 +639,30 @@
       height: 100vh;
     }
     .hero-page {
+      height: 40em;
+      span{
+   
+        font-size: 1em;
+       
+      }
+  
+      .free{
+        
+        font-size: .8em;
+      
+      }
+
+      img{
+        display: none;
+      }
       .hero-title {
         left: 0em;
-        top: 9em;
-        width: 55%;
+        top: 6em !important;
+        width: 100%;
+        font-size: 1.5em;
+        top: 4em;
+
+      
 
         h2 {
           font-size: 2em;
@@ -575,9 +693,13 @@
 
   .nav-links-style {
     .nav-links {
-      width: 50%;
+      width: 60%;
       z-index: 11;
-      top: 4.7em;
+      top: 7.7em;
+      font-size: 1.2em;
+      font-weight: bold;
+
+
 
       .search-link {
         display: block;
@@ -587,6 +709,11 @@
   }
   .destop-card {
     display: none;
+  }
+
+  .hamburger{
+    margin-top: .6em;
+    font-size: .9m;
   }
   
 }

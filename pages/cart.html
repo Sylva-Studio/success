@@ -5,22 +5,46 @@
   <link rel="stylesheet" href="/statics/css/style.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"> 
+
+  <!-- swiper css --> 
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>   
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>       
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>   
 
-  <title>Success Vision | Cart</title>
+  <title>Success Vision | Home</title>
 </head>
-<body>
-
+<body >
+ <div class="container">
+  <div class="container-inner">
+  <div class="container-slider">
  <header>
+ <div class="promo-nav z-depth-0">
+ <div class="nav z-depth-0">
+  <h6>Glasses in an hour when you shop in store!</h6>
+  <div class="promo-btn">
+  <a href="">
+  <button class="mybtn btn waves-effect">Shop now</button>
+  </a>
+  </div>
+  <div class="terms">
+  <a href="">
+  <h6>Terms and Condition apply</h6>
+  </a>
+  </div>
+ </div>
+ </div>
  <div class="nav-style">
- <nav id="nav_bar" class="z-depth-0">
+ <nav  class="nav_bar z-depth-0">
  <div class="data_bar">
  <div class="menu-bar">
   <div class="hamburger"></div>
@@ -40,7 +64,7 @@
     <i class="far fa-user"></i>
     </div>
     <div class="shopping_bar">
-    <i class="fas fa-shopping-bag"></i>
+    <a href="\pages\cart.html"><i class="fas fa-shopping-bag"></i></a>
     </div>
   </div>
  </nav>
@@ -59,14 +83,15 @@
   <li><a href="\pages\contact-us.html" class="nav-link"> <i class="fas fa-address-book"></i> Contact Us</a></li>
   <li><a href="\pages\join-us.html" class="nav-link"> <i class="fas fa-restroom"></i> Join The Team</a></li>
   </ul>
+  <div class="nav-links-scrollbar"></div>
   </div>  
   </header>
 
 <div class="cart-page">
-<h2>My cart</h2>
+<h5 class="cart-page-title">My cart</h5>
   <div class="cart-inner">
     <div class="cart-details">
-    <h2>Your shopping cart is empty</h2>
+    <h5>Your shopping cart is empty</h5>
     <p>You can continue shopping or sign in to view a previously saved cart.</p>
     <div class="cart-btn">
     <button class="btn waves-effect mybtn">Continue shopping</button>
@@ -74,25 +99,29 @@
     </div>
     </div>
     <div class="cart-summary">
-      <h2>Summary</h2>
-        <h5>Items: 0</h5>
+      <h5>Summary</h5>
+        <h6>Items: 0</h6>
         <div class="cart-subtotal">
-        <h5>Subtotal:</h5>
-        <h5>$0</h5>
+        <h6>Subtotal:</h6>
+        <h6>$0</h6>
         </div>
         <div class="cart-shipping">
-        <h5>Shipping Insurance:</h5>
-        <h5>$0.01</h5>
+        <h6>Shipping Insurance:</h6>
+        <h6>$0.01</h6>
         </div>
+        <div class="line"></div>
         <div class="cart-order-total">
-        <h5>Order Total:</h5>
-        <h5>$0.01</h5>
+        <h6>Order Total:</h6>
+        <h6>$0.01</h6>
         </div>
-        <h2>Shipping and Tax not included</h2>
+        
+        <p>Shipping and Tax not included</p>
+       <div class="checkbox-btn">
         <button class="btn waves-effect mybtn">Proceed to Checkout</button>
+       </div>
         <div class="cart-btn pay-btn">
-    <button class="btn waves-effect mybtn"><i class="fab fa-amazon-pay"></i></button>
-    <button class="btn waves-effect mybtn"><i class="fab fa-paypal"></i></button>
+    <div><button class="btn waves-effect mybtn"><i class="fab fa-amazon-pay"></i></button></div>
+    <div><button class="btn waves-effect mybtn"><i class="fab fa-paypal"></i></button></div>
     </div>
     <div class="promo-code">
     <form >
@@ -116,7 +145,7 @@
 <footer class="footer">
 <div class="mail-list">
 <div class="mail-list-inner">
-<h2>Join Our Mailing List</h2>
+<h5>Join Our Mailing List</h5>
 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, nesciunt. </p>
   <div class="form-style">
   <div class="mail-icon"><i class="far fa-envelope"></i></div>

@@ -1,5 +1,5 @@
 .user-profile{
- transform: translateY(-110%);
+ transform: translateY(-120%);
   width: 40%;
   margin: auto;
   padding: 1em;
@@ -66,8 +66,9 @@
 
 @media screen and (max-width:40em){
   .user-profile{
+    transform: translateY(-150%);
     width: 90%;
-    top: 4em;
+    top: 8em;
   }
 }
 
