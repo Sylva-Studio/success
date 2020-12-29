@@ -997,6 +997,53 @@
     .footer{
       .main-footer-inner{
         max-height: 1em !important;
+
+        .footer-title{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 1em 0;
+          background-color: $main-green;
+
+          h6{
+            color: $main-white;
+            font-weight: bold;
+            padding-bottom: 1em;
+          }
+        }
+
+        .accordion{
+          background-color: $main-green;
+          font-size: 1em !important;
+          margin: 0;
+          color: $main-white; 
+          word-spacing: .2em !important;
+
+          .active, .accordion:hover {
+            background-color: $main-white ; 
+          }
+        }
+
+        .panel{
+          background-color: $main-white; 
+          padding: 0;
+
+          div{
+            display: flex;
+            flex-direction: column;
+            color: $main-text-gray;
+
+
+            a{
+              font-weight: bold;
+              display: block;
+              border: .1em solid $main-green;
+              padding: 1em;
+              color: $main-text-gray;
+           
+            }
+          }
+        }
         .mobile-div{
         h2{
           padding: 3em 1em ;
@@ -1006,22 +1053,39 @@
       }
       .mail-list{
         padding: 4em 0;
+        height: 10em;
         .mail-list-inner{
+          position: relative;
           width: 100%;
-          padding-top: 8em;
+          padding-top: 0;
+          h2{
+            font-size: 1em;
+            position: absolute;
+            top: .5em;
+          }
 
           p{
             margin: 1em 0;
             line-height: 1.6em;
             padding: 0 .5em;
+            display: none;
           }
           .form-style{
             width: 95%;
+            height: 3em;
+            position: absolute;
+            top: 2.2em;
             
             form{
               input{
                 padding-left: .5em;
                 margin-bottom:1em;
+                font-size: .8em;
+                background-color: transparent;
+                
+                &::placeholder{
+                  font-size: 1.4em !important;
+                }
               }
             }
           }
