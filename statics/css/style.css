@@ -254,6 +254,7 @@
   .shop_card .hover-display {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+    margin-bottom: 2em !important;
   }
   .shop-card-mobile {
     margin-top: 2em;
