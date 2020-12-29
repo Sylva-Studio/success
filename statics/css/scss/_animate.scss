@@ -2,9 +2,13 @@
 .hover-display{
   transform: translateX(0);
 }
+
+.shop-items{
+  margin-top: 3em !important;
+}
 .search-container{
  
-  
+
 
   .hero-page{
     padding-top: 0 !important;
@@ -129,6 +133,15 @@
 
 
 .topright:hover {color: red;}
+
+.top-selling-items{
+  .shop-title{
+    margin: 1em 0;
+    background-color: $main-green;
+    padding: .5em 0 .5em 1em;
+    color: $main-white;
+  }
+}
 
 
 @media screen and (max-width:40em){

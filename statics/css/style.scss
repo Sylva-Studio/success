@@ -36,6 +36,7 @@
   font-family: 'Comfortaa', sans-serif !important;
   z-index: -1;
   background-color: rgb(253, 253, 253);
+  
 
 .search-page{
   height: 90vh;
@@ -598,7 +599,7 @@
 
     .swiper-container {
       width: 100%;
-      height: 36em;
+      height: 40em;
   
       .swiper-pagination-bullets{
         // padding-top: 7em !important;
@@ -845,6 +846,8 @@
     
       .check-filter-btn{
         cursor: pointer;
+        position: absolute;
+         right: 0;
        
         h4{
           font-size: .8em;
@@ -934,6 +937,12 @@
         .sort-ul{
           left: 10em;
           // overflow: hidden;
+          top: 2em ;
+          left: .3em;
+          font-size: 1.2em;
+          width: 13em;
+          height: 9em;
+          padding: 2em;
         }
       }
       
