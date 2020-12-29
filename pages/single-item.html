@@ -170,10 +170,84 @@
 </section>
   
 
+<footer class="footer">
+<div class="mail-list">
+<div class="mail-list-inner">
+<h2>Join Our Mailing List</h2>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, nesciunt. </p>
+  <div class="form-style">
+  <div class="mail-icon"><i class="far fa-envelope"></i></div>
+  <form >
+    <input type="text" placeholder="Email address">
+  </form>
+  <div class="move-icon"><i class="fas fa-chevron-right"></i></div>
+  </div>
+</div>
+</div>
+<div class="main-footer">
+<div class="main-footer-inner">
+
+<button class="accordion"> SUCCESS VISION<span><i class="fas fa-chevron-down"></i></span></button>
+<div class="panel">
+<div>
+<a href="\pages\about-us.html">About Us</a>
+<a href="\pages\contact-us.html">Contact Us</a>
+<a href="\pages\location.html">Locations</a>
+<a href="\pages\specials.html">Specials</a>
+<a href="\pages\join-us.html">Join the Team</a>
+</div>
+</div>
+
+<button class="accordion">CUSTOMER SERVICE <span><i class="fas fa-chevron-down"></i></span></button>
+<div class="panel">
+ <div>
+<a href="\pages\shipping.html">Shipping & Returns</a>
+<a href="\pages\privacy.html">Privacy Policy</a>
+<a href="\pages\gift-cards.html">Gift Cards</a>
+</div>
+</div>
+
+<button class="accordion"> QUESTIONS <span><i class="fas fa-chevron-down"></i></span></button>
+<div class="panel">
+  <div>
+<a href="\pages\fags.html">FAQS</a>
+<a href="\pages\feedback.html">Your Feedback</a>
+</div>
+</div>
+
+<div class="footer-title">
+  <h6>&copy; 2021 Success Vision</h6>
+</div>
+
+  </div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</footer>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="\statics\js\index.js"></script>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
 
  <!-- Initialize Swiper -->
   <script>
