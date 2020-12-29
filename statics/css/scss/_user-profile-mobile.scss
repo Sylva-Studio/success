@@ -1,0 +1,73 @@
+.user-profile-mobile{
+  width: 100%;
+  .mobile-user-profile{
+     width: 50%;
+     margin: auto;
+     padding: 1em;
+     background-color: $main-white;
+     transition: all .5s linear;
+  
+   
+     .mobile-login-form, .mobile-create-form{
+       
+       input{
+         width: 100%;
+         outline: none;
+         border-radius: .5em;
+         margin-bottom: .5em;
+         height: 2.8em;
+         border: .1em solid gray;
+       }
+       .input-btn{
+         border: none;
+         color: $main-white;
+         background-color: $main-green;
+         transition: all .5s linear;
+   
+         &:hover{
+           background-color: transparent;
+           border: .1em solid $main-green;
+           color: $main-green;
+         }
+       }
+     }
+     .mobile-login-form{
+   
+       margin-bottom: 2em;
+   
+       .mobile-form-info{
+         display: flex;
+         justify-content: space-between;
+         
+       }
+       .mobile-checkbox{
+         width: 10%;
+         height: 1em;
+        ;
+         
+       }
+       input:checked{
+         background-color: $main-style !important;
+       }
+       
+       .mobile-checkbox-div{
+         display: flex;
+         flex: 1;
+       }
+     }
+   
+   }
+   
+}
+ @media screen and (max-width:40em){
+  .user-profile-mobile{
+    padding: 2em .5em 0;
+    .mobile-user-profile{
+      width: 100%;
+      
+      
+    }
+  }
+ }
+ 
+ 

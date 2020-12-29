@@ -29,13 +29,42 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-     
 
-      .cart-btn{
+      h3{
+        color: rgb(156, 156, 156);
+        margin: 1em 0;
+      }
+
+      p{
+        font-size: .8em;
+        text-align: center;
+        line-height: 1.6;
+
+        a{
+          color: $main-green;
+        }
+      }
+     
+      .cart-icon{
+        width: 6em;
+        height: 5.5em;
+        background-color: rgb(245, 244, 244);
         display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        
+
+        i{
+          font-size: 3em;
+          color: $main-white;
+        }
+      }
+      .cart-btn{
+        margin-top: 1em;
 
         button{
-          margin-left: .5em;
+          padding: 1em 1.5em;
         }
       }
 
@@ -94,9 +123,11 @@
 
 @media screen and (max-width:30em){
   .cart-page{
-    margin-top: 8em ;
+    margin-top: 5em ;
+    padding: 1em;
     .cart-page-title{
       margin-bottom: 3em;
+      display: none;
     }
     .cart-inner{
       display: block;

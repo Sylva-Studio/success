@@ -1,6 +1,7 @@
 @import "./scss/variable";
 @import "./scss/shop";
 @import "./scss/user-profile";
+@import "./scss/user-profile-mobile";
 @import "./scss/location";
 @import "./scss/single-item";
 @import "./scss/cart";
@@ -10,6 +11,7 @@
 @import "./scss/contact-us";
 @import "./scss/gift-card";
 @import "./scss/gender-search";
+
 
 :root {
   box-sizing: border-box;
@@ -32,8 +34,8 @@
   }
  body {
   font-family: 'Comfortaa', sans-serif !important;
-
-  
+  z-index: -1;
+  background-color: rgb(253, 253, 253);
 
 .search-page{
   height: 90vh;
@@ -124,8 +126,8 @@
       overflow: hidden;
       height: 15em;
 
-      
     }
+
     button {
       padding: 0.2em 4em;
     }
@@ -243,9 +245,9 @@
         }
       }
 
-      h2 {
+       h2 {
         font-size: 1.8em;
-      }
+        }
     }
   }
 
@@ -442,22 +444,21 @@
 
       
       .profile_icon{
+
        i{
         transition: all .5s linear;
 
-        &:hover {
-        color: $main-green;
-        font-style: italic;
+          &:hover {
+          color: $main-green;
+          font-style: italic;
+          }
         }
-       }
       }
 
       .data_bar {
         display: flex;
         height: 100%;
         align-items: center;
-
-        
 
         .search {
           margin-left: 1em;
@@ -493,7 +494,7 @@
         cursor: pointer;
 
         
-      .shopping_bar{
+        .shopping_bar{
         
           i{
             color: $main-text-gray;
@@ -506,7 +507,7 @@
             }
           }
         
-      }
+        }
 
         div {
           margin-left: 1em;
@@ -597,12 +598,13 @@
 
     .swiper-container {
       width: 100%;
-      height: 45em;
+      height: 36em;
   
       .swiper-pagination-bullets{
-        padding-top: 7em !important;
+        // padding-top: 7em !important;
         .swiper-pagination-bullet{
-          width: 2em;
+          width: 1em;
+          height: .5em;
         }
       }
     }
@@ -616,15 +618,11 @@
       justify-content: center;
       align-items: center;
      
-     
-      button{
-        margin: 1em 5em 3em ;
-      }
       
     }
   
   }
-  }
+  
 
   .thanks-section {
     margin-top: 4em;
@@ -663,11 +661,9 @@
         }
 
         p {
-          letter-spacing: 0.1em;
-          word-spacing: 0.1em;
           font-size: .6em;
           line-height: 1.6;
-          margin-bottom: 1em;
+         
         }
 
         button {
@@ -842,9 +838,9 @@
     justify-content: flex-end;
    
    
-    .filter-tab{
-      display: none;
-    }
+      .filter-tab{
+        display: none;
+      }
     
     
       .check-filter-btn{
@@ -853,13 +849,14 @@
         h4{
           font-size: .8em;
           z-index: -1;
+          margin-right: 3em;
 
           span{
             font-weight: bold;
             font-size: 1em;
             color: $main-green;
           }
-          margin-right: 3em;
+          
         }  
       }
       .sort-ul{
@@ -898,82 +895,71 @@
         }
          
       }
-    }
-  
-  
-  @media screen and (max-width:40em){
-
-    .check-filter{
-      
-    //  overflow: hidden;
-      .filter-tab{
-        display: block;
-        position: absolute;
-       left: 0em;
-       top: -1em;
-
-       button{
-         padding: .2em 1em;
-         font-size: 1.3em;
-         
-         i{
-           margin-left: .5em;
-           margin-top: .2em;
-         }
-       }
-
-      }
-      .check-filter-btn{
-        h4{
-          font-size: 1.1em;
-          margin-right: .5em;
-        }
-      }
-      .sort-ul{
-        left: 10em;
-        // overflow: hidden;
-      }
-    }
-    
-    .card-style{
-  
-      .shop_card{
-        .item-underline{
-        
-          width: 100%;
-          height: .05em;
-          background-color: rgb(196, 196, 196);
-        
-       }
-      }
-      
-      .shop-card-mobile{
-        margin-top: 2em;
-        display: block;
-     
-      }
-      
-    }
-  
-    .items{
-      display: none;
-    }
-    
   }
-
+}
 
 @media screen and (max-width: 40em) {
   body {
-    font-size: .8em;
 
+    button{
+      font-size: 1.3em !important;
+    }
+   
     .check-filter{
-      .check-filter-btn{
+      
+      //  overflow: hidden;
+        .filter-tab{
+          display: block;
+          position: absolute;
+         left: 0em;
+         top: -1em;
+  
+         button{
+           padding: .2em 1em;
+           font-size: 1.3em;
+           
+           i{
+             margin-left: .5em;
+             margin-top: .2em;
+           }
+         }
+  
+        }
+        .check-filter-btn{
+          h4{
+            font-size: 1.1em;
+            margin-right: .5em;
+          }
+        }
         .sort-ul{
-          left: 0;
-         
+          left: 10em;
+          // overflow: hidden;
         }
       }
-    }
+      
+      .card-style{
+    
+        .shop_card{
+          .item-underline{
+          
+            width: 100%;
+            height: .05em;
+            background-color: rgb(196, 196, 196);
+          
+         }
+        }
+        
+        .shop-card-mobile{
+          margin-top: 2em;
+          display: block;
+       
+        }
+        
+      }
+    
+      .items{
+        display: none;
+      }
 
     .promo-nav{
       display: none;
@@ -1079,9 +1065,7 @@
           img{
             height: 20em;
 
-              &:hover {
-                transform: scaleX(0%);
-              }
+              
           }
         }
 
@@ -1095,10 +1079,7 @@
           
         }
       }
-      // button{
-      //   font-size: 1.2em;
-        
-      // }
+     
     }
 
     button {
@@ -1111,6 +1092,7 @@
     }
     .hero-page {
       height: 30em;
+      
       span{
    
         font-size: 1em;
@@ -1132,7 +1114,7 @@
       }
       .hero-title {
        
-        top: 12em !important;
+        top: 8em !important;
         width: 100%;
         font-size: .8em;
       
@@ -1150,7 +1132,8 @@
 
         button {
           padding: 0.5em 1em;
-          margin: 2em;
+          margin: 1em ;
+          margin-left: 0;
          
         }
       }
@@ -1161,10 +1144,7 @@
   }
   
    
-      button {
-        padding: 0.2em 2em;
-      }
-    }
+     
   
 
   .nav-links-style {
@@ -1207,5 +1187,5 @@
     }
   }
 
-  
+} 
 

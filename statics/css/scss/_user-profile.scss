@@ -5,8 +5,8 @@
   padding: 1em;
   background-color: $main-white;
   position: fixed;
-  top: 3em;
-  right: 1em;
+  top: 3.5em !important;
+  right: 2em;
   transition: all .5s linear;
   z-index: 100011;
 
@@ -68,7 +68,7 @@
   .user-profile{
     transform: translateY(-150%);
     width: 90%;
-    top: 8em;
+    top: 5em;
   }
 }
 
