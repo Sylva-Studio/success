@@ -1520,6 +1520,7 @@ body .title .title_underline {
 }
 
 body .hero-page {
+  margin-top: 2.3em;
   width: 100%;
   position: relative;
   background-color: #01a076;
