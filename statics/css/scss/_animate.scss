@@ -1,0 +1,138 @@
+/* Style the tab */
+.hover-display{
+  transform: translateX(0);
+}
+.search-container{
+ 
+  
+
+  .hero-page{
+    padding-top: 0 !important;
+    height: 20em;
+
+    .title-move{
+      text-align: left;
+      h2{
+        margin-bottom: .5em;
+      }
+      h4{
+        line-height: 1.6em;
+      }
+    }
+
+    .hero-image{
+      img{
+       float: right;
+        width: 30em;
+        padding-right: 1em;
+      }
+    }
+  }
+}
+
+.tab {
+  display: flex;
+  border: 1px solid #ccc;
+  background-color: $main-white;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  transition: all .5s linear;
+
+  &:hover{
+    border-bottom: none;
+  }
+  
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: inherit;
+  height: 100%;
+  color: rgb(51, 51, 51);
+  padding: 22px 16px;
+  width: 90%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: .7em !important;
+  
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(245, 241, 241);
+
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: rgb(245, 241, 241);
+ 
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: flex;
+  padding: 0 12px 1em;
+  margin: auto;
+  border-left: none;
+  display: none;
+  position: absolute;
+  top: 27em;
+  left: 2.7em;
+  right: 2.7em;
+  box-shadow: .1 .1em .5em rgba(0,0,0,0.5);
+  background-color: rgb(245, 241, 241);
+  border-radius: .5em;
+
+  h3{
+    margin-top: .5em;
+
+    span{
+      color: gray;
+      font-size: .8em;
+    }
+  }
+
+  .search-filter{
+    margin-top: .5em;
+
+    form{
+     display: grid;
+     grid-template-columns: repeat(4, minmax(100px, 1fr));
+     grid-gap : 1em;
+     width: 70%;
+     margin: auto;
+    
+
+     div{
+      input{
+        width: 1em;
+        height: 1em;
+      }
+     }
+    }
+
+    
+  }
+
+}
+
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: .8em;
+}
+
+
+.topright:hover {color: red;}
+
+
+@media screen and (max-width:40em){
+  .tab{
+    display: none;
+  }
+}

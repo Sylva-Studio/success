@@ -1,0 +1,31 @@
+.specials{
+  .specials-inner{
+    margin-top: 2em;
+
+    .specials-title{
+      width: 80%;
+      margin: 1em auto 4em;
+      text-align: center;
+
+      h1{
+        margin-bottom: 1em;
+      }
+    }
+
+    .shop_card{
+      
+      height: 20em;
+      box-shadow: 0 0 .5em rgba(0,0,0,0.1);
+      transition: all .5s linear;
+
+      &:hover{
+        box-shadow: 0 0 .5em rgba(0,0,0,0.3);
+      }
+
+      .hover-display{
+        transform: translateX(0%);
+      }
+    }
+
+  }
+}

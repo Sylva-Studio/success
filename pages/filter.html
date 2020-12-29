@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/statics/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"> 
+  
+  <title>Document</title>
+</head>
+<body>
+  <div class="filter">
+  <a href="\pages\kids.html">
+  <button><i class="fas fa-long-arrow-alt-left"></i></button>
+  </a>
+<div class="mobile-tab">
+  <button class="tablinks" onmouseover="openCity(event, 'mGender')">Gender <i class="fas fa-chevron-down"></i></button>
+  <button class="tablinks" onmouseover="openCity(event, 'mMaterial')">Material <i class="fas fa-chevron-down"></i></button>
+  <button class="tablinks" onmouseover="openCity(event, 'mShape')">Shape <i class="fas fa-chevron-down"></i></button>
+  <button class="tablinks" onmouseover="openCity(event, 'mFinish')">Finish <i class="fas fa-chevron-down"></i></button>
+  <button class="tablinks" onmouseover="openCity(event, 'mColor')">Color <i class="fas fa-chevron-down"></i></button>
+  <button class="tablinks" onmouseover="openCity(event, 'mExtra')">Extra <i class="fas fa-chevron-down"></i></button>
+   <button class="tablinks" onmouseover="openCity(event, 'mSize')">Size <i class="fas fa-chevron-down"></i></button>
+  <button class="tablinks" onmouseover="openCity(event, 'mPrice')">Price <i class="fas fa-chevron-down"></i></button>
+</div>
+
+<div id="mGender" class="mobile-tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Gender: <span>All</span></h3>
+  <div class="search-filter">
+    <form >
+    <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Men</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Women</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="" checked>
+    <label for="">Kids</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Tweens</label>
+    </div>
+    </form>
+  </div>
+</div>
+
+<div id="mMaterial" class="mobile-tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+    <h3>Material: <span>All</span></h3>
+  <div class="search-filter">
+    <form >
+    <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Metal</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Memory Metal</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Plastic</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Acetate</label>
+    </div>
+
+    <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Rubber</label>
+    </div>
+    </form>
+  </div>
+</div>
+
+<div id="mShape" class="mobile-tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+   <h3>Shape: <span>All</span></h3>
+  <div class="search-filter">
+    <form >
+    <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Aviator</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Browline</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Cat Eye</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Oval</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Rectangle</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Round</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Square</label>
+    </div>
+    </form>
+  </div>
+</div>
+
+<div id="mFinish" class="mobile-tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+ <h3>Finish: <span>All</span></h3>
+  <div class="search-filter">
+    <form >
+    <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Antique</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Matte</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Satin</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Shiny</label>
+    </div>
+    </form>
+  </div>
+</div>
+
+<div id="mColor" class="mobile-tabcontent">
+  
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Color: <span>All</span></h3>
+  <div class="search-filter">
+    <form >
+    <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Black</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Blue</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Brown</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Crystal</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Gray</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Green</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Gold</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Orange</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Pink</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Purple</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Red</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Silver</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">White</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Yellow</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Tortoise</label>
+    </div>
+
+    </form>
+  </div>
+</div>
+
+<div id="mExtra" class="mobile-tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+   <h3>Extra: <span>None</span></h3>
+  <div class="search-filter">
+    <form >
+    <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Nose Pads</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Bifocal & Progressive</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Semi-Rimless</label>
+    </div>
+
+    </form>
+  </div>
+</div>
+
+<div id="mSize" class="mobile-tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+ <h3>Size: <span>All</span></h3>
+  <div class="search-filter">
+   <div data-role="page">
+
+  <div data-role="main" class="ui-content">
+    <form method="post" action="/action_page_post.php">
+      <div data-role="rangeslider">
+        <label for="price-min">Price:</label>
+        <input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
+        <label for="price-max">Price:</label>
+        <input type="range" name="price-max" id="price-max" value="800" min="0" max="1000">
+      </div>
+     
+      </form>
+  </div>
+</div>
+  </div>
+</div>
+
+<div id="mPrice" class="mobile-tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Price: <span>All</span></h3>
+  <div class="search-filter">
+    <form >
+    <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Men</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Women</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Kids</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Tweens</label>
+    </div>
+    </form>
+  </div>
+</div>
+</div>
+</div>
+<script src="\statics\js\index.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+.gift-card{
+ .gift-card-inner{
+   width: 90%;
+   margin: 1em auto;
+
+   .gift-purchase{
+    .get-gift{
+      button{
+        padding: .5em;
+        margin: 1em 0;
+      }
+    }
+  }
+
+   .gift-title{
+     h1{
+       margin: .5em ;
+       text-align: center;
+     }
+
+   }
+   .gift-box{
+     margin-top: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    
+
+    .gift-box-inner{
+      border-radius: .3em;
+      border: .1em solid $main-green;
+
+     
+
+      form{
+  
+        .gift-form{
+          padding: .5em;
+  
+          input, textarea{
+            width: 100%;
+            outline: none;
+            border-radius: .3em;
+            padding-left: 1em;
+            margin-top: .5em;
+          
+          }
+
+          input{
+            height: 2.5em;
+          }
+        
+        }
+      }
+
+      .box-types{
+        display: flex;
+        margin: 1em ;
+        justify-content: space-evenly;
+        
+        
+        h4{
+          border-radius: .3em;
+           border: .1em solid ;
+           padding: 1em;
+           transition: all .5s linear;
+           margin: 0 .3em ;
+
+           &:hover{
+            background-color: $main-green;
+            color: $main-white;
+            border: .1em solid $main-green;
+          }
+        }
+
+        
+
+      }
+    }
+  }
+ }
+}
+
+@media screen and (max-width: 40em) {
+  .gift-card{
+    
+    .gift-card-inner{
+      
+      .gift-box{
+        
+        display: block;
+      }
+    }
+  }
+}

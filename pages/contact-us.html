@@ -2,36 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="/statics/css/style.css">
-  <meta charset="utf-8">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"> 
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>       
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  
+  <link rel="stylesheet" href="/statics/css/style.css">
 
-  <title>Success Vision | Cart</title>
+  <link rel="stylesheet" href="/statics/css/style.css">
+  <meta charset="utf-8">
+
+  <title>Success Vision | Home</title>
 </head>
-<body>
-
+<body >
+  <div class="container-inner">
+  <div class="container-slider">
  <header>
+ <div class="promo-nav ">
+ <div class="nav ">
+  <h5>Glasses in an hour when you shop in store!</h5>
+  <div class="promo-btn">
+  <a href="\pages\shop.html">
+  <button class="mybtn btn waves-effect">Shop now</button>
+  </a>
+  </div>
+  <div class="terms">
+  <a href="">
+  <h5>Terms and Conditions apply</h5>
+  </a>
+  </div>
+ </div>
+ </div>
  <div class="nav-style">
- <nav id="nav_bar" class="z-depth-0">
+ <nav  class="nav_bar ">
  <div class="data_bar">
  <div class="menu-bar">
   <div class="hamburger"></div>
  </div>
- <div class="search">
-  <a href="\pages\search.html"><i class="fas fa-search"></i></a>
+ <div class="search" id="search">
+  <i class="fas fa-search search-btn"></i>
   </div>
  </div>
   <div class="logo">
   <a href="\pages\home.html">
-   <img src="/statics\images\logo.png" alt="" >
+   <img src="/statics\images\logo-removebg-preview.png" alt="" >
   </a>
   </div>
 
@@ -40,11 +58,12 @@
     <i class="far fa-user"></i>
     </div>
     <div class="shopping_bar">
-    <i class="fas fa-shopping-bag"></i>
+    <a href="\pages\cart.html"><i class="fas fa-shopping-bag"></i></a>
     </div>
   </div>
  </nav>
  </div>
+
 
 <div class="nav-links-style">
 <ul class="nav-links">
@@ -59,68 +78,88 @@
   <li><a href="\pages\contact-us.html" class="nav-link"> <i class="fas fa-address-book"></i> Contact Us</a></li>
   <li><a href="\pages\join-us.html" class="nav-link"> <i class="fas fa-restroom"></i> Join The Team</a></li>
   </ul>
+  <div class="nav-links-scrollbar"></div>
   </div>  
   </header>
 
   <div class="contact-us">
-    <h2>TELL US YOUR THOUGHTS</h2>
-    <div class="contact-us-inner">
-    <div class="contact-left">
+    <h1>Tell Us Your Thought</h1>
+    
     <div class="general">
-    <h2>GENERAL QUESTIONS</h2>
-    <h5>For any questions, press inquiries, requests, or comments you may have</h5>
+  
+    <h5>For any questions, order inquiries, requests, or comments you may have</h5>
     <h5>please contact: <span>HELLO@SUCCESSVISION.COM</span></h5>
     </div>
-    <div class="line"></div>
-    <div class="write-us">
-    <h2>WRITE US A LETTER</h2>
-    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quia at laborum earum officiis eum veniam corporis dolorem distinctio nihil quis culpa, ea esse dignissimos quod hic necessitatibus recusandae ipsum!</h5>
-    
-    <h6>PLEASE WRITE TO:</h6>
-    <h6>2020 20th west road. N., Seattle, London</h6>
+
+    <div class="contact-us-inner">
+    <div class="contact-left">
+
+    <form >
+    <div class="contact-form ">
+      <label for="">Your Name:</label>
+      <div class="double">
+      <input type="text" placeholder="First Name">
+       <input type="text" placeholder="Last Name">
+       </div>
     </div>
-    <div class="line"></div>
-    <div class="write-us">
-    <h2>JOIN OUR COMMUNITY</h2>
-    <h5>Show Woven some social love. Like us on <span>FACEBOOK</span>, tweet us on <span>TWITTER</span>, or follow us around on <span>INSTAGRAM</span>.</h5>
-    
+
+    <div class="contact-form">
+      <label for=""> Your E-mail Address:</label>
+      <input type="text" placeholder="ex: myname@example.com">
     </div>
+
+    <div class="contact-form ">
+      <label for=""> Phone Number:</label>
+       <div class="double">
+        <input class="area-code" type="text" placeholder="area code">
+      <input type="phone" placeholder="phone Number">
+      </div>
     </div>
+
+    <div class="contact-form">
+      <label for=""> Location of Service:</label>
+      <select >
+        <option value="">Address 1</option>
+        <option value="">Address 1</option>
+        <option value="">Address 1</option>
+        <option value="">Address 1</option>
+        <option value="">Address 1</option>
+        <option value="">Address 1</option>
+        <option value="">Address 1</option>
+        <option value="">Address 1</option>
+      </select>
+    </div>
+
+    <div class="contact-form">
+      <label for=""> Message (optional):</label>
+     <textarea name="" id="" cols="30" rows="10" placeholder="Hope you enjoy this Success Vision Express contact card!"></textarea>
+    </div>
+
+    <button>Submit</button>
+  </form>
+  </div>
+
     <div class="contact-right">
       <div class="right">
-      <h2>COLLABORATE WITH US</h2>
-      <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic nesciunt </h5>
+      <h4>Collaborate with us</h4>
+      <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic nesciunt </h6>
       <button class="btn mybtn waves-effect">COLLABORATE</button>
       </div>
+
       <div class="right">
-      <h2>REQUEST A MEETING!</h2>
-      <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic nesciunt </h5>
-      <button>Request A Meeting</button>
+      <h4>Support Hotline</h4>
+      <h6>Give us a call:</h6>
+      <h4>+1-844-234-4321</h4>
+      <h5>Mon-Fri 9am-12am EST</h5>
+      <h5>Sat-Sun 9am-6pm EST</h5>
+      
       </div>
+      
+
+    </div>
+   
     </div>
     </div>
-  </div>
 
-
-<footer class="footer">
-<div class="mail-list">
-<div class="mail-list-inner">
-<h2>Join Our Mailing List</h2>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, nesciunt. </p>
-  <div class="form-style">
-  <div class="mail-icon"><i class="far fa-envelope"></i></div>
-  <form >
-    <input type="text" placeholder="Email address">
-  </form>
-  <div class="move-icon"><i class="fas fa-chevron-right"></i></div>
-  </div>
-</div>
-</div>
-<div class="main-footer">
-<div class="main-footer-inner">
-
-</div>
-</div>
-</footer>
 </body>
 </html>

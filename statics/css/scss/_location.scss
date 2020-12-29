@@ -1,0 +1,64 @@
+.location{
+
+  width: 90%;
+  margin: auto;
+  margin-top: 5em;
+
+  .location-inner{
+    padding: 1em;
+
+    .credit-card{
+      text-align: center;
+      margin-top: 1em;
+    }
+
+    .address{
+      .address-underline{
+        border-bottom: .1em solid $main-green;
+        margin: 1em 0;
+      }
+      .address-inner{
+        display: grid;
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
+        grid-gap:1em;
+
+        .city1{
+         h2{
+           font-weight: bold;
+           border-bottom: .1em solid ;
+           margin-bottom: 1em;
+           text-align: center;
+         }
+         h4,h6{
+           margin-bottom: 1em;
+         }
+        }
+      }
+    }
+    .shop-hours{
+      &  * {
+        margin-bottom: 1em;
+      }
+      h2{
+       font-weight: bolder;
+      }
+      h4, h5{
+        text-align: center;
+      }
+
+      h4{
+        span{
+          font-weight: bold ;
+          
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:40em){
+  .address-inner{
+    grid-template-columns: repeat(2, minmax(100px, 1fr)) !important;
+   
+  }
+}

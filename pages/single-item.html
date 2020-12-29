@@ -2,35 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="/statics/css/style.css">
-  <meta charset="utf-8">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"> 
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>       
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  
+  <link rel="stylesheet" href="/statics/css/style.css">
+
+  <link rel="stylesheet" href="/statics/css/style.css">
+  <meta charset="utf-8">
 
   <title>Success Vision | Home</title>
 </head>
 <body >
+  <div class="container-inner">
+  <div class="container-slider">
  <header>
+ <div class="promo-nav ">
+ <div class="nav ">
+  <h5>Glasses in an hour when you shop in store!</h5>
+  <div class="promo-btn">
+  <a href="\pages\shop.html">
+  <button class="mybtn btn waves-effect">Shop now</button>
+  </a>
+  </div>
+  <div class="terms">
+  <a href="">
+  <h5>Terms and Conditions apply</h5>
+  </a>
+  </div>
+ </div>
+ </div>
  <div class="nav-style">
- <nav id="nav_bar" class="z-depth-0">
+ <nav  class="nav_bar ">
  <div class="data_bar">
  <div class="menu-bar">
   <div class="hamburger"></div>
  </div>
- <div class="search">
-  <a href="\pages\search.html"><i class="fas fa-search"></i></a>
+ <div class="search" id="search">
+  <i class="fas fa-search search-btn"></i>
   </div>
  </div>
   <div class="logo">
   <a href="\pages\home.html">
-   <img src="/statics\images\logo.png" alt="" >
+   <img src="/statics\images\logo-removebg-preview.png" alt="" >
   </a>
   </div>
 
@@ -39,7 +58,6 @@
     <i class="far fa-user"></i>
     </div>
     <div class="shopping_bar">
-    <i class="fas fa-shopping-bag"></i>
     <a href="\pages\cart.html"><i class="fas fa-shopping-bag"></i></a>
     </div>
   </div>
@@ -60,78 +78,120 @@
   <li><a href="\pages\contact-us.html" class="nav-link"> <i class="fas fa-address-book"></i> Contact Us</a></li>
   <li><a href="\pages\join-us.html" class="nav-link"> <i class="fas fa-restroom"></i> Join The Team</a></li>
   </ul>
+  <div class="nav-links-scrollbar"></div>
   </div>  
   </header>
 
-<section id="single-item">
-
+<section class="single-item">
+<div class="single-item-inner">
 <article class="card-style location-card">
 
-  <div id="myCarousel" class="carousel " data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-    <div class="item active">
-    <img src="\statics\images\ss501blk1.jpg" alt="New York">
-    </div>
-
-     <div class="item">
-      <img src="\statics\images\helmblk1.jpg" alt="New York">
+   <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+      <img src="\statics\images\503blk1-removebg-preview.png" alt="" srcset="">
+      </div>
+      <div class="swiper-slide">
+      <img src="\statics\images\chadblk1-removebg-preview.png" alt="" srcset="">
+      </div>
+      <div class="swiper-slide">
+      <img src="\statics\images\image-removebg-preview (4).png" alt="" srcset="">
+      </div>
+      <div class="swiper-slide">
+      <img src="\statics\images\101bluetort1-removebg-preview.png" alt="" srcset="">
       </div>
       
-      <div class="item">
-      <img src="\statics\images\4071clear1.jpg" alt="New York">
-      </div>
-      </div>
-
-</div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    
+  </div>
 </article>
-
-<article>
-
-</article >
 
 <article class="single-item-info">
 <div class="single-item-info-inner">
-<div class="item-name"><h5>Product name : Glass Frame</h5></div>
+<div class="item-name">
+<h1> Glass Frame</h1>
+</div>
+
 <div class="item-things">
-<div class="item-price"><h5>Product price : $19.0</h5></div>
-<div class="item-fav"><h5><i class="far fa-heart"></i></h5></div>
+<div class="item-underline"></div>
+<div class="item-price">
+<h3> $3,999
+<span class="line-tru">$9,000</span>
+</h3>
+</div>
+<div class="item-underline"></div>
+<div class="quantity">
+  <h4>Quantity: </h4>
+  <h6 class="minus">-</h6>
+  <h6 class="one">1</h6>
+  <h6 class="plus">+</h6>
+</div>
+<div class="item-underline"></div>
+<div class="hover-display">
+        <div class="hover-display-btn">
+        <button>Buy Product</button>
+        </div>
+        <div class="hover-display-fav">
+        <i class="far fa-heart"></i>
+        </div>
+        </div>
+        <div class="item-underline"></div>
+        <div class="share-icon">
+        <h4>Share with friends</h4>
+         <div class="follower-links">
+          <div class="fb"><a href="">
+          <i class="fab fa-facebook"></i>
+          </a></div>
+          <div class=""><a href="">
+          <i class="fab fa-instagram"></i>
+          </a></div>
+         <div class=""> <a href="">
+          <i class="fab fa-pinterest"></i>
+          </a></div>
+          <div class=""><a href="">
+          <i class="fab fa-whatsapp"></i>
+          </a></div>
+          </div>
+        </div>
 </div>
 </div>
-<div class="item-btn">
-<button>Add to cart</button>
-</div>
-<div class="item-desc">
-<h4>Description</h4>
-<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur accusantium labore officiis necessitatibus commodi velit a, nobis unde praesentium quo amet maxime facere molestiae reprehenderit expedita minima, ipsam nulla maiores.</h6>
-</div>
+
 </article>
+</div>
+
+<div class="single-item-footer">
+<div class="item-desc">
+<h2>Description</h2>
+<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur accusantium labore officiis necessitatibus commodi velit a, nobis unde praesentium quo amet maxime facere molestiae reprehenderit expedita minima, ipsam nulla maiores.</h4>
+</div>
+</div>
 </section>
   
-<footer class="footer">
-<div class="mail-list">
-<div class="mail-list-inner">
-<h3>Join Our Mailing List</h3>
-  <form >
-    <input type="text" placeholder="Email address">
-  </form>
-</div>
-</div>
-<div class="main-footer">
-<div class="main-footer-inner">
-
-</div>
-</div>
-</footer>
 
 
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="\statics\js\index.js"></script>
+
+ <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+       centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    
+    });
+  </script>
 </body>
 </html>

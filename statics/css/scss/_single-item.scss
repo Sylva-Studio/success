@@ -1,119 +1,168 @@
-#single-item{
-  margin-top: 5em;
+.single-item{
+
+  
+  width: 90%;
+  margin: auto;
  
+  .single-item-inner{
+    margin-top: 5em;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+ box-shadow: 0 0 .5em rgba(0,0,0,0.1);
 
-  // .carousel{
-  //   padding-top: 5em;
-  //   width: 30em;
-  //   height: 20em;
-  //   margin:  2em auto;
-  //   background-color: rgb(253, 232, 191);
-
-
-  //   .carousel-indicators{
-  //     .active{
-  //       background-color: $main-style;
-  //     }
-    
-  //   }
-
-    
-    
-  }
-
-  .single-item-info-inner{
-    font-size: 2em !important;
-    width: 30%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .item-things{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 60%;
-  }
-
-  .item-btn{
-
-    width: 30%;
-    margin: 1em auto;
-   
-
-
-    button{
-      width: 100%;
-      background-color: $main-style;
-      border: none;
-      color: $main-white;
+    .location-card{
+     
+      .swiper-container{
+        width: 100%;
+        .swiper-wrapper{
+          .swiper-slide{
+            img{
+              display: block;
+              margin: auto;
+            }
+          }
+          
+        }
+      }
+    }
+  
+    .single-item-info-inner{
       
-      &:hover{
-        background-color: darken($main-style, 5%);
+      margin: auto;
+      margin-top: 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      h1{
+        font-size: 2em;
+        font-weight: bold;
+      }
+     
+    }
+  
+    .item-things{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+     
+
+      & * + *{
+        padding: .5em 2em .5em;
+      }
+
+      h3{
+        padding-top: .5em;
+        .line-tru{
+          text-decoration: line-through;
+          color: gray;
+          margin-left: .5em;
+        }
+      }
+
+      .hover-display{
+        display: flex;
+        justify-content: space-between;
+        
+        button{
+          padding: .5em 1em;
+          cursor: pointer;
+        }
+        i{
+          font-size: 1.4em;
+          margin-top: .2em;
+          color: $main-style;
+          cursor: pointer;
+        }
+      }
+
+      .share-icon{
+        .follower-links{
+          display: flex;
+          padding: 0em;
+        
+          i{
+            color: rgb(196, 196, 196);
+            cursor: pointer;
+          }
+         
+          .fb{
+            margin-top: .5em;
+          }
+        }
+      }
+
+      .quantity{
+        display: flex;
+        h4{
+          margin: .5em 1em 0 0;
+          }
+          .plus, .minus{
+            border: .1em solid rgb(233, 233, 233);
+            color:  rgb(196, 196, 196);
+           padding: .2em .5em;
+           font-size: 1em;
+           cursor: pointer;
+        }
+        .one{
+        border: .1em solid rgb(233, 233, 233);
+         padding: .3em 1em ;
+         font-size: .9em;
+         cursor: pointer;
+      
+        }
+      }
+
+      .item-underline{
+        border-bottom: .1em solid rgb(235, 235, 235);
+      }
+    }
+  
+    }
+  
+    .single-item-footer{
+      margin: 1em 0;
+      box-shadow: 0 0 .5em rgba(0,0,0,0.1);
+      padding: 1em;
+      
+      .item-desc{
+        margin:auto;
+
+        h2{
+          font-weight: bold;
+          padding-bottom: .5em;
+        }
+    
+        h4{
+          font-size: 1.1em;
+          line-height: 1.6;
+        }
       }
     }
 
-  }
-  .item-fav{
-    border: .03em solid $main-style;
-    padding: .5em;
-    height: 1.2em;
-    position: relative;
-    width: 1.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: .2em;
-
-    i{
-      font-size: 2.1em;
-      color: $main-style;
-      
-    }
-  }
-  .item-desc{
-    width: 80%;
-    margin:auto;
-    padding-top: 2em;
-    h4{
-      font-weight: bold;
-    }
-
-    h6{
-      font-size: 1.1em;
-      line-height: 1.6;
-    }
-  }
-  
-
+}
 
 @media screen and (max-width:40em){
-  #single-item{
-    // .carousel{
-    //   width: 20em;
-    //   height: 18em;
-    // }
+  .single-item{
+    
+    .single-item-inner{
+      display: block;
+    }
+
     .single-item-info-inner{
       width: 100%;
     padding: 1em;
 
     .item-things{
-      width: 70%;
+     padding-top: 1em;
     }
 
     }
-    .item-btn{
-      width: 70%;
-      button{
-        padding: 1em;
-      }
-    }
+    
   }
   .item-desc{
-    width: 80%;
+    
     margin: auto;
   }
 }

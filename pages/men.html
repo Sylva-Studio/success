@@ -2,25 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="/statics/css/style.css">
-  <meta charset="utf-8">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"> 
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>       
+ <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
 
-  <title>Success Vision | Cart</title>
+  
+  
+  <link rel="stylesheet" href="/statics/css/style.css">
+
+  <link rel="stylesheet" href="/statics/css/style.css">
+  
+
+  <meta charset="utf-8">
+
+  <title>Success Vision | Home</title>
 </head>
-<body>
-
+<body >
+  <div class="container-inner">
+  <div class="container-slider">
  <header>
+ <div class="promo-nav ">
+ <div class="nav ">
+  <h5>Glasses in an hour when you shop in store!</h5>
+  <div class="promo-btn">
+  <a href="\pages\shop.html">
+  <button class="mybtn btn waves-effect">Shop now</button>
+  </a>
+  </div>
+  <div class="terms">
+  <a href="">
+  <h5>Terms and Conditions apply</h5>
+  </a>
+  </div>
+ </div>
+ </div>
  <div class="nav-style">
- <nav id="nav_bar" class="z-depth-0">
+ <nav  class="nav_bar ">
  <div class="data_bar">
  <div class="menu-bar">
   <div class="hamburger"></div>
@@ -30,8 +52,8 @@
   </div>
  </div>
   <div class="logo">
-  <a href="\pages\home.html">
-   <img src="/statics\images\logo.png" alt="" >
+  <a href="\index.html">
+   <img src="/statics\images\logo-removebg-preview.png"alt="" >
   </a>
   </div>
 
@@ -40,11 +62,12 @@
     <i class="far fa-user"></i>
     </div>
     <div class="shopping_bar">
-    <i class="fas fa-shopping-bag"></i>
+    <a href="\pages\cart.html"><i class="fas fa-shopping-bag"></i></a>
     </div>
   </div>
  </nav>
  </div>
+
 
 <div class="nav-links-style">
 <ul class="nav-links">
@@ -62,8 +85,746 @@
   </div>  
   </header>
 
+ 
+<div class="search-container">
 
-<footer class="footer">
+<div class="hero-page">
+<div class="hero-image">
+<img src="/statics\images\black-boy-image-removebg-preview.png" alt="" >
+</div>
+<div class="hero-title">
+<div class="title-move">
+<h2 class="">Men Glass</h2>
+<h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate voluptatem maiores quidem obcaecati voluptatum, velit tempora animi eos recusandae dolor quod nostrum, dolores ut, eveniet ratione blanditiis. Atque, consectetur magni? </h4>
+</div>
+</div>
+</div>
+
+
+<div class="tab">
+  <button class="tablinks" onmouseover="openCity(event, 'Gender')">Gender <i class="fas fa-chevron-down"></i></button>
+  <button class="tablinks" onmouseover="openCity(event, 'Material')">Material <i class="fas fa-chevron-down"></i></button>
+  <button class="tablinks" onmouseover="openCity(event, 'Shape')">Shape <i class="fas fa-chevron-down"></i></button>
+  <button class="tablinks" onmouseover="openCity(event, 'Finish')">Finish <i class="fas fa-chevron-down"></i></button>
+  <button class="tablinks" onmouseover="openCity(event, 'Color')">Color <i class="fas fa-chevron-down"></i></button>
+  <button class="tablinks" onmouseover="openCity(event, 'Extra')">Extra <i class="fas fa-chevron-down"></i></button>
+   <button class="tablinks" onmouseover="openCity(event, 'Size')">Size <i class="fas fa-chevron-down"></i></button>
+  <button class="tablinks" onmouseover="openCity(event, 'Price')">Price <i class="fas fa-chevron-down"></i></button>
+</div>
+
+<div id="Gender" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Gender: <span>All</span></h3>
+  <div class="search-filter">
+    <form >
+    <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Men</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Women</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="" checked>
+    <label for="">Kids</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Tweens</label>
+    </div>
+    </form>
+  </div>
+</div>
+
+<div id="Material" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+    <h3>Material: <span>All</span></h3>
+  <div class="search-filter">
+    <form >
+    <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Metal</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Memory Metal</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Plastic</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Acetate</label>
+    </div>
+
+    <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Rubber</label>
+    </div>
+    </form>
+  </div>
+</div>
+
+<div id="Shape" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+   <h3>Shape: <span>All</span></h3>
+  <div class="search-filter">
+    <form >
+    <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Aviator</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Browline</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Cat Eye</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Oval</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Rectangle</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Round</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Square</label>
+    </div>
+    </form>
+  </div>
+</div>
+
+<div id="Finish" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+ <h3>Finish: <span>All</span></h3>
+  <div class="search-filter">
+    <form >
+    <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Antique</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Matte</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Satin</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Shiny</label>
+    </div>
+    </form>
+  </div>
+</div>
+
+<div id="Color" class="tabcontent">
+  
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Color: <span>All</span></h3>
+  <div class="search-filter">
+    <form >
+    <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Black</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Blue</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Brown</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Crystal</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Gray</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Green</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Gold</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Orange</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Pink</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Purple</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Red</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Silver</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">White</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Yellow</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Tortoise</label>
+    </div>
+
+    </form>
+  </div>
+</div>
+
+<div id="Extra" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+   <h3>Extra: <span>None</span></h3>
+  <div class="search-filter">
+    <form >
+    <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Nose Pads</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Bifocal & Progressive</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Semi-Rimless</label>
+    </div>
+
+    </form>
+  </div>
+</div>
+
+<div id="Size" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+ <h3>Size: <span>All</span></h3>
+  <div class="search-filter">
+   <div data-role="page">
+
+  <div data-role="main" class="ui-content">
+    <form method="post" action="/action_page_post.php">
+      <div data-role="rangeslider">
+        <label for="price-min">Price:</label>
+        <input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
+        <label for="price-max">Price:</label>
+        <input type="range" name="price-max" id="price-max" value="800" min="0" max="1000">
+      </div>
+     
+      </form>
+  </div>
+</div>
+  </div>
+</div>
+
+<div id="Price" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Price: <span>All</span></h3>
+  <div class="search-filter">
+    <form >
+    <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Men</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Women</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Kids</label>
+    </div>
+
+     <div class="">
+    <input type="radio" name="" id="">
+    <label for="">Tweens</label>
+    </div>
+    </form>
+  </div>
+</div>
+</div>
+
+<div class="check-filter">
+
+<div class="check-filter-inner">
+<div class="check-filter-btn">
+<h4 id="sort-btn">Sort by <span>Best Sellers</span></h4>
+</div>
+<ul class="sort-ul">
+<li>
+<a href="">Best Seller</a>
+</li>
+<li>
+<a href="">Prices Low to High</a>
+</li>
+<li>
+<a href="">Prices High to Low</a>
+</li>
+<li>
+<a href="">New Arrivals</a>
+</li>
+</ul>
+</div>
+<div class="filter-tab">
+<a href="\pages\filter.html">
+<button>Filter <i class="fas fa-sort"></i> </button>
+</a>
+</div>
+</div>
+
+<article class="shop-items">
+
+<div class="card-style shop-items-inner">
+  
+      <div class="shop_card">
+      <a href="\pages\single-item.html">
+        <div class="shop-image">
+        <img src="\statics\images\chadblk1-removebg-preview.png" alt="" >
+        </div>
+        </a>
+        <div class="shop_item_info">
+          <div class="item_name">Glass Frame</div>
+          <div class="item_price">$90.01</div>
+        </div> 
+        <div class="hover-display">
+        <div class="hover-display-btn">
+        <button>View product</button>
+        </div>
+        <div class="hover-display-fav">
+        <i class="far fa-heart"></i>
+        </div>
+        </div>
+      </div>
+
+      <div class="shop_card">
+      <a href="\pages\single-item.html">
+        <div class="shop-image">
+        <img src="\statics\images\chadblk1-removebg-preview.png" alt="" >
+        </div>
+        </a>
+        <div class="shop_item_info">
+          <div class="item_name">Glass Frame</div>
+          <div class="item_price">$90.01</div>
+        </div> 
+
+        <div class="hover-display">
+        <div class="hover-display-btn">
+        <button>View product</button>
+        </div>
+        <div class="hover-display-fav">
+        <i class="far fa-heart"></i>
+        </div>
+        </div>
+      </div>
+
+      <div class="shop_card">
+      <a href="\pages\single-item.html">
+        <div class="shop-image">
+        <img src="\statics\images\chadblk1-removebg-preview.png" alt="" >
+        </div>
+        </a>
+        <div class="shop_item_info">
+          <div class="item_name">Glass Frame</div>
+          <div class="item_price">$90.01</div>
+        </div> 
+
+        <div class="hover-display">
+        <div class="hover-display-btn">
+        <button>View product</button>
+        </div>
+        <div class="hover-display-fav">
+        <i class="far fa-heart"></i>
+        </div>
+        </div>
+      </div>
+
+      <div class="shop_card">
+      <a href="\pages\single-item.html">
+        <div class="shop-image">
+        <img src="\statics\images\chadblk1-removebg-preview.png" alt="" >
+        </div>
+        </a>
+        <div class="shop_item_info">
+          <div class="item_name">Glass Frame</div>
+          <div class="item_price">$90.01</div>
+        </div> 
+
+        <div class="hover-display">
+        <div class="hover-display-btn">
+        <button>View product</button>
+        </div>
+        <div class="hover-display-fav">
+        <i class="far fa-heart"></i>
+        </div>
+        </div>
+
+      </div>
+
+      <div class="shop_card">
+      <a href="\pages\single-item.html">
+        <div class="shop-image">
+        <img src="\statics\images\chadblk1-removebg-preview.png" alt="" >
+        </div>
+        </a>
+        <div class="shop_item_info">
+          <div class="item_name">Glass Frame</div>
+          <div class="item_price">$90.01</div>
+        </div> 
+
+        <div class="hover-display">
+        <div class="hover-display-btn">
+        <button>View product</button>
+        </div>
+        <div class="hover-display-fav">
+        <i class="far fa-heart"></i>
+        </div>
+        </div>
+
+      </div>
+
+      <div class="shop_card">
+      <a href="\pages\single-item.html">
+        <div class="shop-image">
+        <img src="\statics\images\chadblk1-removebg-preview.png" alt="" >
+        </div>
+        </a>
+        <div class="shop_item_info">
+          <div class="item_name">Glass Frame</div>
+          <div class="item_price">$90.01</div>
+        </div> 
+
+        <div class="hover-display">
+        <div class="hover-display-btn">
+        <button>View product</button>
+        </div>
+        <div class="hover-display-fav">
+        <i class="far fa-heart"></i>
+        </div>
+        </div>
+
+      </div>
+      
+    </div>
+</article>
+
+ <div class="top-selling-items">
+    <div class="shop-title">
+    <h2>Best Selling Glass Frames</h2>
+    </div>
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+    <div class="swiper-slide">
+    <div class="shop_card">
+    <a href="\pages\single-item.html">
+    <div class="shop-image">
+    <img src="\statics\images\chadblk1-removebg-preview.png" alt="" >
+        </div>
+        </a>
+        <div class="shop_item_info">
+          <div class="item_name">Glass Frame</div>
+          <div class="item_price">$90.01</div>
+        </div> 
+        
+      </div>
+      </div>
+      <div class="swiper-slide"><div class="shop_card">
+      <a href="\pages\single-item.html">
+        <div class="shop-image">
+        <img src="\statics\images\chadblk1-removebg-preview.png" alt="" >
+        </div>
+        </a>
+        <div class="shop_item_info">
+          <div class="item_name">Glass Frame</div>
+          <div class="item_price">$90.01</div>
+        </div> 
+
+      </div></div>
+      <div class="swiper-slide"><div class="shop_card">
+      <a href="\pages\single-item.html">
+        <div class="shop-image">
+        <img src="\statics\images\chadblk1-removebg-preview.png" alt="" >
+        </div>
+        </a>
+        <div class="shop_item_info">
+          <div class="item_name">Glass Frame</div>
+          <div class="item_price">$90.01</div>
+        </div> 
+        
+      </div></div>
+      <div class="swiper-slide"><div class="shop_card">
+      <a href="\pages\single-item.html">
+        <div class="shop-image">
+        <img src="\statics\images\chadblk1-removebg-preview.png" alt="" >
+        </div>
+        </a>
+        <div class="shop_item_info">
+          <div class="item_name">Glass Frame</div>
+          <div class="item_price">$90.01</div>
+        </div> 
+      
+      </div></div>
+      <div class="swiper-slide"><div class="shop_card">
+      <a href="\pages\single-item.html">
+        <div class="shop-image">
+        <img src="\statics\images\chadblk1-removebg-preview.png" alt="" >
+        </div>
+        </a>
+        <div class="shop_item_info">
+          <div class="item_name">Glass Frame</div>
+          <div class="item_price">$90.01</div>
+        </div> 
+        
+      </div></div>
+      <div class="swiper-slide"><div class="shop_card">
+      <a href="\pages\single-item.html">
+        <div class="shop-image">
+        <img src="\statics\images\chadblk1-removebg-preview.png" alt="" >
+        </div>
+        </a>
+        <div class="shop_item_info">
+          <div class="item_name">Glass Frame</div>
+          <div class="item_price">$90.01</div>
+        </div> 
+       
+      </div></div>
+      <div class="swiper-slide"><div class="shop_card">
+      <a href="\pages\single-item.html">
+        <div class="shop-image">
+        <img src="\statics\images\chadblk1-removebg-preview.png" alt="" >
+        </div>
+        </a>
+        <div class="shop_item_info">
+          <div class="item_name">Glass Frame</div>
+          <div class="item_price">$90.01</div>
+        </div> 
+     
+      </div>
+      </div>
+ 
+    </div>
+      <!-- Add Pagination -->
+    <div class="swiper-scrollbar"></div>
+    </div>
+
+    <article class="shop-items">
+<div class="card-style shop-items-inner">
+  
+      <div class="shop_card">
+      <a href="\pages\single-item.html">
+        <div class="shop-image">
+        <img src="\statics\images\chadblk1-removebg-preview.png" alt="" >
+        </div>
+        </a>
+        <div class="shop_item_info">
+          <div class="item_name">Glass Frame</div>
+          <div class="item_price">$90.01</div>
+        </div> 
+        <div class="hover-display">
+        <div class="hover-display-btn">
+        <button>View product</button>
+        </div>
+        <div class="hover-display-fav">
+        <i class="far fa-heart"></i>
+        </div>
+        </div>
+      </div>
+
+      <div class="shop_card">
+      <a href="\pages\single-item.html">
+        <div class="shop-image">
+        <img src="\statics\images\chadblk1-removebg-preview.png" alt="" >
+        </div>
+        </a>
+        <div class="shop_item_info">
+          <div class="item_name">Glass Frame</div>
+          <div class="item_price">$90.01</div>
+        </div> 
+
+        <div class="hover-display">
+        <div class="hover-display-btn">
+        <button>View product</button>
+        </div>
+        <div class="hover-display-fav">
+        <i class="far fa-heart"></i>
+        </div>
+        </div>
+      </div>
+
+      <div class="shop_card">
+      <a href="\pages\single-item.html">
+        <div class="shop-image">
+        <img src="\statics\images\chadblk1-removebg-preview.png" alt="" >
+        </div>
+        </a>
+        <div class="shop_item_info">
+          <div class="item_name">Glass Frame</div>
+          <div class="item_price">$90.01</div>
+        </div> 
+
+        <div class="hover-display">
+        <div class="hover-display-btn">
+        <button>View product</button>
+        </div>
+        <div class="hover-display-fav">
+        <i class="far fa-heart"></i>
+        </div>
+        </div>
+      </div>
+
+      <div class="shop_card">
+      <a href="\pages\single-item.html">
+        <div class="shop-image">
+        <img src="\statics\images\chadblk1-removebg-preview.png" alt="" >
+        </div>
+        </a>
+        <div class="shop_item_info">
+          <div class="item_name">Glass Frame</div>
+          <div class="item_price">$90.01</div>
+        </div> 
+
+        <div class="hover-display">
+        <div class="hover-display-btn">
+        <button>View product</button>
+        </div>
+        <div class="hover-display-fav">
+        <i class="far fa-heart"></i>
+        </div>
+        </div>
+
+      </div>
+
+      <div class="shop_card">
+      <a href="\pages\single-item.html">
+        <div class="shop-image">
+        <img src="\statics\images\chadblk1-removebg-preview.png" alt="" >
+        </div>
+        </a>
+        <div class="shop_item_info">
+          <div class="item_name">Glass Frame</div>
+          <div class="item_price">$90.01</div>
+        </div> 
+
+        <div class="hover-display">
+        <div class="hover-display-btn">
+        <button>View product</button>
+        </div>
+        <div class="hover-display-fav">
+        <i class="far fa-heart"></i>
+        </div>
+        </div>
+
+      </div>
+
+      <div class="shop_card">
+      <a href="\pages\single-item.html">
+        <div class="shop-image">
+        <img src="\statics\images\chadblk1-removebg-preview.png" alt="" >
+        </div>
+        </a>
+        <div class="shop_item_info">
+          <div class="item_name">Glass Frame</div>
+          <div class="item_price">$90.01</div>
+        </div> 
+
+        <div class="hover-display">
+        <div class="hover-display-btn">
+        <button>View product</button>
+        </div>
+        <div class="hover-display-fav">
+        <i class="far fa-heart"></i>
+        </div>
+        </div>
+
+      </div>
+      
+    </div>
+</article>
+
+<!-- pagination -->
+     <div class="content_detail__pagination cdp" actpage="1">
+			<a href="#!-1" class="cdp_i">prev</a>
+			<a href="#!1" class="cdp_i">1</a>
+			<a href="#!2" class="cdp_i">2</a>
+			<a href="#!3" class="cdp_i">3</a>
+			<a href="#!4" class="cdp_i">4</a>
+			<a href="#!5" class="cdp_i">5</a>
+			<a href="#!6" class="cdp_i">6</a>
+			<a href="#!7" class="cdp_i">7</a>
+			<a href="#!8" class="cdp_i">8</a>
+			<a href="#!9" class="cdp_i">9</a>
+			<a href="#!10" class="cdp_i">10</a>
+			<a href="#!11" class="cdp_i">11</a>
+			<a href="#!12" class="cdp_i">12</a>
+			<a href="#!13" class="cdp_i">13</a>
+			<a href="#!14" class="cdp_i">14</a>
+			<a href="#!15" class="cdp_i">15</a>
+      <a href="#!16" class="cdp_i">16</a>
+			<a href="#!17" class="cdp_i">17</a>
+			<a href="#!18" class="cdp_i">18</a>
+			<a href="#!19" class="cdp_i">19</a>
+			<a href="#!+1" class="cdp_i">next</a>
+		</div>
+
+    <footer class="footer">
 <div class="mail-list">
 <div class="mail-list-inner">
 <h2>Join Our Mailing List</h2>
@@ -79,9 +840,52 @@
 </div>
 <div class="main-footer">
 <div class="main-footer-inner">
-
+ <div class="mobile-div">
+ <h2> &copy; 2021 SuccessVision</h2>
+ </div>
 </div>
 </div>
 </footer>
+      
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="\statics\js\index.js"></script>
+<script>
+var mySwiper = new Swiper('.swiper-container', {
+
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar'
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+
+    740: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    }
+  }
+})
+</script>
 </body>
 </html>

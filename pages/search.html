@@ -2,35 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="/statics/css/style.css">
-  <meta charset="utf-8">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"> 
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>       
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  
+  <link rel="stylesheet" href="/statics/css/style.css">
+
+  <link rel="stylesheet" href="/statics/css/style.css">
+  <meta charset="utf-8">
 
   <title>Success Vision | Home</title>
 </head>
 <body >
+  <div class="container-inner">
+  <div class="container-slider">
  <header>
+ <div class="promo-nav ">
+ <div class="nav ">
+  <h5>Glasses in an hour when you shop in store!</h5>
+  <div class="promo-btn">
+  <a href="\pages\shop.html">
+  <button class="mybtn btn waves-effect">Shop now</button>
+  </a>
+  </div>
+  <div class="terms">
+  <a href="">
+  <h5>Terms and Conditions apply</h5>
+  </a>
+  </div>
+ </div>
+ </div>
  <div class="nav-style">
- <nav id="nav_bar" class="z-depth-0">
+ <nav  class="nav_bar ">
  <div class="data_bar">
  <div class="menu-bar">
   <div class="hamburger"></div>
  </div>
- <div class="search">
-  <a href="\pages\search.html"><i class="fas fa-search"></i></a>
+ <div class="search" id="search">
+  <i class="fas fa-search search-btn"></i>
   </div>
  </div>
   <div class="logo">
-  <a href="\pages\home.html">
-   <img src="/statics\images\logo.png" alt="" >
+  <a href="\index.html">
+   <img src="/statics\images\logo-removebg-preview.png" alt="" >
   </a>
   </div>
 
@@ -39,13 +58,22 @@
     <i class="far fa-user"></i>
     </div>
     <div class="shopping_bar">
-    <i class="fas fa-shopping-bag"></i>
     <a href="\pages\cart.html"><i class="fas fa-shopping-bag"></i></a>
     </div>
   </div>
  </nav>
  </div>
-
+<div class="hero-page">
+<div class="hero-image">
+<img src="/statics\images\girl-in-park_q90-removebg-preview.png" alt="" >
+</div>
+<div class="hero-title">
+<h2 class="title-move">Glasses in about <span>2 days </span>when you shop online <span class="free">plus free shipping</span></h2>
+<a href="\pages\shop.html">
+<button class="btn waves-effect mybtn">Shop Now <i class="fas fa-long-arrow-alt-right arrow"></i></button>
+</a>
+</div>
+</div>
 
 <div class="nav-links-style">
 <ul class="nav-links">
@@ -60,215 +88,80 @@
   <li><a href="\pages\contact-us.html" class="nav-link"> <i class="fas fa-address-book"></i> Contact Us</a></li>
   <li><a href="\pages\join-us.html" class="nav-link"> <i class="fas fa-restroom"></i> Join The Team</a></li>
   </ul>
+  <div class="nav-links-scrollbar"></div>
   </div>  
   </header>
-<section class="search-page">
 
-<article class="search-items">
-<div class="search-items-inner">
-<div class="search-glass">
-
-<form >
-<label for="price">Search items</label>
-  <input type="text" placeholder="Search items">
-</form>
-
-</div>
-<div class="search-price">
-
-<form >
-<label for="price">$120.0</label>
-  <input type="range" id="price" min="$120.0" max="$500.0" >
-</form>
-
-</div>
-
-<div class="filter">
-<form >
-<label for="price">Filter Product</label>
-<select value="">
-<option value="men">Men</option>
-<option value="women">Women</option>
-<option value="kids">Kids</option>
-</select>
-</form>
-</div>
-
-
-</div>
-</article>
-
-<article class="shop-items">
+  <div class="mobile-search-page " >
+  <span  class="topright search-close"> <i class="far fa-times-circle"></i></span>
+    <div class="search-page-inner">
+    <i class="fas fa-search"></i>
+    <form >
+      <input type="text" placeholder="search products and services">
+    </form>
+    </div>
+    <article class="shop-items">
 <h5>Product suggestions</h5>
 <div class="card-style shop-items-inner">
   
       <div class="shop_card">
       <a href="\pages\single-item.html">
         <div class="shop-image">
-        <img src="\statics\images\chadblk1.jpg" alt="" >
+        <img src="\statics\images\101bluetort1-removebg-preview.png" alt="" >
         </div>
         </a>
         <div class="shop_item_info">
           <div class="item_name">Glass Frame</div>
           <div class="item_price">$90.01</div>
         </div> 
+        <div class="hover-display">
+        <div class="hover-display-btn">
+        <button>View product</button>
+        </div>
+        <div class="hover-display-fav">
+        <i class="far fa-heart"></i>
+        </div>
+        </div>
       </div>
 
       <div class="shop_card">
       <a href="\pages\single-item.html">
         <div class="shop-image">
-        <img src="\statics\images\chadblk1.jpg" alt="" >
+        <img src="\statics\images\503blk1-removebg-preview.png" alt="" >
         </div>
         </a>
         <div class="shop_item_info">
           <div class="item_name">Glass Frame</div>
           <div class="item_price">$90.01</div>
         </div> 
+        <div class="hover-display">
+        <div class="hover-display-btn">
+        <button>View product</button>
+        </div>
+        <div class="hover-display-fav">
+        <i class="far fa-heart"></i>
+        </div>
+        </div>
       </div>
 
       <div class="shop_card">
       <a href="\pages\single-item.html">
         <div class="shop-image">
-        <img src="\statics\images\chadblk1.jpg" alt="" >
+        <img src="\statics\images\chadblk1-removebg-preview.png" alt="" >
         </div>
         </a>
         <div class="shop_item_info">
           <div class="item_name">Glass Frame</div>
           <div class="item_price">$90.01</div>
         </div> 
-      </div>
-
-      <div class="shop_card">
-      <a href="\pages\single-item.html">
-        <div class="shop-image">
-        <img src="\statics\images\chadblk1.jpg" alt="" >
+        <div class="hover-display">
+        <div class="hover-display-btn">
+        <button>View product</button>
         </div>
-        </a>
-        <div class="shop_item_info">
-          <div class="item_name">Glass Frame</div>
-          <div class="item_price">$90.01</div>
-        </div> 
-      </div>
-
-      <div class="shop_card">
-      <a href="\pages\single-item.html">
-        <div class="shop-image">
-        <img src="\statics\images\chadblk1.jpg" alt="" >
+        <div class="hover-display-fav">
+        <i class="far fa-heart"></i>
         </div>
-        </a>
-        <div class="shop_item_info">
-          <div class="item_name">Glass Frame</div>
-          <div class="item_price">$90.01</div>
-        </div> 
-      </div>
-
-      <div class="shop_card">
-      <a href="\pages\single-item.html">
-        <div class="shop-image">
-        <img src="\statics\images\chadblk1.jpg" alt="" >
         </div>
-        </a>
-        <div class="shop_item_info">
-          <div class="item_name">Glass Frame</div>
-          <div class="item_price">$90.01</div>
-        </div> 
       </div>
-
-      <div class="shop_card">
-      <a href="\pages\single-item.html">
-        <div class="shop-image">
-        <img src="\statics\images\chadblk1.jpg" alt="" >
-        </div>
-        </a>
-        <div class="shop_item_info">
-          <div class="item_name">Glass Frame</div>
-          <div class="item_price">$90.01</div>
-        </div> 
-      </div>
-
-      <div class="shop_card">
-      <a href="\pages\single-item.html">
-        <div class="shop-image">
-        <img src="\statics\images\chadblk1.jpg" alt="" >
-        </div>
-        </a>
-        <div class="shop_item_info">
-          <div class="item_name">Glass Frame</div>
-          <div class="item_price">$90.01</div>
-        </div> 
-      </div>
-
-      <div class="shop_card">
-      <a href="\pages\single-item.html">
-        <div class="shop-image">
-        <img src="\statics\images\chadblk1.jpg" alt="" >
-        </div>
-        </a>
-        <div class="shop_item_info">
-          <div class="item_name">Glass Frame</div>
-          <div class="item_price">$90.01</div>
-        </div> 
-      </div>
-
-      <div class="shop_card">
-      <a href="\pages\single-item.html">
-        <div class="shop-image">
-        <img src="\statics\images\chadblk1.jpg" alt="" >
-        </div>
-        </a>
-        <div class="shop_item_info">
-          <div class="item_name">Glass Frame</div>
-          <div class="item_price">$90.01</div>
-        </div> 
-      </div>
-
-      <div class="shop_card">
-      <a href="\pages\single-item.html">
-        <div class="shop-image">
-        <img src="\statics\images\chadblk1.jpg" alt="" >
-        </div>
-        </a>
-        <div class="shop_item_info">
-          <div class="item_name">Glass Frame</div>
-          <div class="item_price">$90.01</div>
-        </div> 
-      </div>
-
-      <div class="shop_card">
-      <a href="\pages\single-item.html">
-        <div class="shop-image">
-        <img src="\statics\images\chadblk1.jpg" alt="" >
-        </div>
-        </a>
-        <div class="shop_item_info">
-          <div class="item_name">Glass Frame</div>
-          <div class="item_price">$90.01</div>
-        </div> 
-      </div>
-      
-      
-    </div>
-</article>
-
-</section>
-  
-<footer class="footer">
-<div class="mail-list">
-<div class="mail-list-inner">
-<h3>Join Our Mailing List</h3>
-  <form >
-    <input type="text" placeholder="Email address">
-  </form>
-</div>
-</div>
-<div class="main-footer">
-<div class="main-footer-inner">
-
-</div>
-</div>
-</footer>
-
-
-<script src="\statics\js\index.js"></script>
 </body>
 </html>
