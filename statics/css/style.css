@@ -71,6 +71,7 @@
 .recommended .recommended-inner .recommended-items .shop_card .hover-display {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
+  margin-bottom: 1em;
 }
 
 .top-selling-items .swiper-container {
