@@ -4,13 +4,14 @@
     
   }
     .items{
+      margin-top: 9em ;
       width: 95%;
       margin: auto;
       .items-inner{
         display: grid;
         grid-template-columns: repeat(6, minmax(100px, 1fr));
         grid-gap:1.5em;
-
+        margin-top: 1em ;
 
         .glass{
           img{
@@ -29,7 +30,8 @@
       width: 95%;
       margin:  auto;
       margin-top: 2em;
-      background-color: $main-white;
+      padding-bottom: 2em;
+      background-color: rgb(236, 236, 236);
       border-radius: .4em;
       box-shadow: 0em 0em .2em rgba(0,0,0,0.1);
       
