@@ -9,9 +9,7 @@ const sortUl = document.querySelector('.sort-ul')
 const tooltipBtn = document.querySelectorAll('.tooltip-btn')
 const isOpen = document.querySelector('.open-tooltip')
 
-const searchBtn = document.querySelector('.search')
-const searchPage = document.querySelector('.search-page')
-const searchClose = document.querySelector('.search-close')
+
 
 btn.addEventListener('click', ()=>{
   console.log('hello')
@@ -35,39 +33,13 @@ userBtn.addEventListener('click', ()=>{
   userLogin.classList.toggle('user-open')
 })
 
-searchBtn.addEventListener('click', ()=>{
-	console.log('search clicked')
-  searchPage.classList.toggle('search-open')
-})
 
 sortBtn.addEventListener('click', ()=>{
   sortUl.classList.toggle('sort-open')
 })
 
-searchClose.addEventListener('click', ()=>{
-	console.log('search clicked')
-  searchPage.classList.toggle('search-open')
-})
 
 
-
-
-
-
-const box = document.querySelector('.title-move')
-
-const options = {
-  rootmargin:"100px"
-}
-const callbackFun = (enteries)=>{
-  enteries.forEach(entry => {
-    entry.target.classList.add('title-open')
-  });
-}
-
-const newObserver = new IntersectionObserver(callbackFun, options)
-
-newObserver.observe(box)
 
 // const promo = document.querySelector('.promo-nav')
 

@@ -63,17 +63,6 @@
   </div>
  </nav>
  </div>
-<div class="hero-page">
-<div class="hero-image">
-<img src="/statics\images\girl-in-park_q90-removebg-preview.png" alt="" >
-</div>
-<div class="hero-title">
-<h2 class="title-move">Glasses in about <span>2 days </span>when you shop online <span class="free">plus free shipping</span></h2>
-<a href="\pages\shop.html">
-<button class="btn waves-effect mybtn">Shop Now <i class="fas fa-long-arrow-alt-right arrow"></i></button>
-</a>
-</div>
-</div>
 
 <div class="nav-links-style">
 <ul class="nav-links">
@@ -88,12 +77,10 @@
   <li><a href="\pages\contact-us.html" class="nav-link"> <i class="fas fa-address-book"></i> Contact Us</a></li>
   <li><a href="\pages\join-us.html" class="nav-link"> <i class="fas fa-restroom"></i> Join The Team</a></li>
   </ul>
-  <div class="nav-links-scrollbar"></div>
   </div>  
   </header>
 
-  <div class="mobile-search-page " >
-  <span  class="topright search-close"> <i class="far fa-times-circle"></i></span>
+  <div class="search-page " >
     <div class="search-page-inner">
     <i class="fas fa-search"></i>
     <form >
@@ -164,7 +151,12 @@
         </div>
       </div>
 
-      <footer class="footer">
+     </article>
+  </div>
+
+
+
+ <footer class="footer">
 <div class="mail-list">
 <div class="mail-list-inner">
 <h2>Join Our Mailing List</h2>
@@ -242,5 +234,30 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 </script>
+<script>
+var mySwiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+})
+</script>
+ 
+
 </body>
 </html>

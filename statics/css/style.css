@@ -1479,6 +1479,53 @@ a button {
   font-size: 3em;
 }
 
+.search-page {
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  padding: 1em;
+  margin-top: 4em;
+}
+
+.search-page .search-page-inner {
+  width: 40%;
+  border-bottom: 0.1em solid #01a076;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search-page .search-page-inner i {
+  margin-right: 0.5em;
+  font-size: 0.8em;
+  margin-top: 0.7em;
+  color: #1f1f1f;
+}
+
+.search-page .search-page-inner form input {
+  font-size: 0.8em;
+  width: 20em;
+  outline: none;
+  border: none;
+  height: 2em;
+}
+
+.search-page .search-page-inner form input::-webkit-input-placeholder {
+  color: #1f1f1f;
+}
+
+.search-page .search-page-inner form input:-ms-input-placeholder {
+  color: #1f1f1f;
+}
+
+.search-page .search-page-inner form input::-ms-input-placeholder {
+  color: #1f1f1f;
+}
+
+.search-page .search-page-inner form input::placeholder {
+  color: #1f1f1f;
+}
+
 .contact-us {
   width: 90%;
   margin: auto;
@@ -1653,72 +1700,6 @@ a button {
   }
 }
 
-.mobile-search-page {
-  height: 90vh;
-  width: 100%;
-  margin: auto;
-  background-color: white;
-  -webkit-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2);
-  padding: 1em;
-  position: fixed;
-  top: 4em;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  z-index: 10000;
-}
-
-.mobile-search-page .shop-items {
-  margin-top: 1em;
-}
-
-.mobile-search-page .shop-items h5 {
-  font-size: 1.1em;
-}
-
-.mobile-search-page .close-search {
-  float: right;
-}
-
-.mobile-search-page .search-page-inner {
-  width: 40%;
-  border-bottom: 0.1em solid #01a076;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.mobile-search-page .search-page-inner i {
-  margin-right: .5em;
-  font-size: .8em;
-  margin-top: .7em;
-  color: #1f1f1f;
-}
-
-.mobile-search-page .search-page-inner form input {
-  font-size: 1em;
-  width: 20em;
-  outline: none;
-  border: none;
-  height: 2em;
-}
-
-.mobile-search-page .search-page-inner form input::-webkit-input-placeholder {
-  color: #1f1f1f;
-}
-
-.mobile-search-page .search-page-inner form input:-ms-input-placeholder {
-  color: #1f1f1f;
-}
-
-.mobile-search-page .search-page-inner form input::-ms-input-placeholder {
-  color: #1f1f1f;
-}
-
-.mobile-search-page .search-page-inner form input::placeholder {
-  color: #1f1f1f;
-}
-
 :root {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1746,69 +1727,6 @@ body {
   font-family: 'Comfortaa', sans-serif !important;
   z-index: -1;
   background-color: #fdfdfd;
-}
-
-body .search-page {
-  height: 90vh;
-  width: 100%;
-  margin: auto;
-  background-color: white;
-  -webkit-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2);
-  padding: 1em;
-  position: fixed;
-  top: 4em;
-  display: none;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  z-index: 10000;
-}
-
-body .search-page.search-open {
-  display: block;
-}
-
-body .search-page .close-search {
-  float: right;
-}
-
-body .search-page .search-page-inner {
-  width: 40%;
-  border-bottom: 0.1em solid #01a076;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-body .search-page .search-page-inner i {
-  margin-right: .5em;
-  font-size: .8em;
-  margin-top: .7em;
-  color: #1f1f1f;
-}
-
-body .search-page .search-page-inner form input {
-  font-size: .8em;
-  width: 20em;
-  outline: none;
-  border: none;
-  height: 2em;
-}
-
-body .search-page .search-page-inner form input::-webkit-input-placeholder {
-  color: #1f1f1f;
-}
-
-body .search-page .search-page-inner form input:-ms-input-placeholder {
-  color: #1f1f1f;
-}
-
-body .search-page .search-page-inner form input::-ms-input-placeholder {
-  color: #1f1f1f;
-}
-
-body .search-page .search-page-inner form input::placeholder {
-  color: #1f1f1f;
 }
 
 body a {
@@ -7418,6 +7336,10 @@ body .check-filter .sort-ul.sort-open {
     top: 8em !important;
     width: 100%;
     font-size: .8em;
+  }
+  body .hero-page .hero-title .bigger-on-mobile {
+    font-size: 3em !important;
+    margin: 0 1em 0 0;
   }
   body .hero-page .hero-title h4 {
     display: none;
