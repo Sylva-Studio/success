@@ -7320,6 +7320,7 @@ body .check-filter .sort-ul.sort-open {
   }
   body .hero-page {
     height: 30em;
+    overflow: hidden;
   }
   body .hero-page span {
     font-size: 1em;
