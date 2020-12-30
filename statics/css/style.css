@@ -168,6 +168,7 @@
           justify-content: center;
   -webkit-transition: all .5s linear;
   transition: all .5s linear;
+  margin-bottom: -3em;
 }
 
 .shop_card .hover-display {
@@ -196,10 +197,6 @@
 .shop_card:hover .hover-display {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
-}
-
-.shop_card > * + * {
-  margin-top: 1em;
 }
 
 .shop_card .shop_item_info {
@@ -838,6 +835,376 @@
   }
 }
 
+.for-about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2.1em;
+  background-color: #01a076;
+  height: 18em;
+  margin-bottom: 1em;
+}
+
+.for-about-us .hero-image img {
+  height: 18em;
+}
+
+.for-about-us .title-move {
+  padding: 5em 1em;
+  color: white;
+}
+
+.for-about-us .title-move h2 {
+  margin-bottom: 1em;
+}
+
+.shop-frames {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 2em;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 1em 1em;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #01a076;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.prescription-page {
+  margin-top: 4em;
+}
+
+.prescription-page h5, .prescription-page h6 {
+  text-align: center;
+}
+
+.prescription-page .pres-form-container {
+  width: 80%;
+  margin: auto;
+}
+
+.prescription-page .pres-form-container button {
+  padding: .5em;
+}
+
+.prescription-page .pres-form-container .pres-form-style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.prescription-page .pres-form-container .pres-form-style .form-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.prescription-page .pres-form-container .pres-form-style .form-side .pres-form {
+  padding: .5em;
+}
+
+.prescription-page .pres-form-container .pres-form-style .form-side .pres-form input {
+  width: 100%;
+  outline: none;
+  border-radius: .3em;
+  padding-left: 1em;
+  margin-top: .5em;
+  height: 2.5em;
+}
+
+.prescription-page .prism {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.prescription-page .prism .main-prescription-inner {
+  width: 60% !important;
+  margin: auto;
+  -ms-grid-columns: 16.8em 12em !important;
+      grid-template-columns: 16.8em 12em !important;
+}
+
+.prescription-page .prism .main-prescription-inner .pres-box1 form .left, .prescription-page .prism .main-prescription-inner .pres-box1 form .right, .prescription-page .prism .main-prescription-inner .pres-box2 form .left, .prescription-page .prism .main-prescription-inner .pres-box2 form .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.prescription-page .prism .prism-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  margin-top: 1em;
+  width: 50%;
+  padding: .5em;
+}
+
+.prescription-page .prism .prism-btn:hover {
+  background-color: #01a076;
+  color: white;
+}
+
+.prescription-page .prism .prism-btn .box {
+  display: block;
+  width: 1em;
+  height: 1em;
+  border: .07em solid;
+  margin-right: .5em;
+}
+
+.prescription-page .prescription-page-inner {
+  width: 90%;
+  margin: auto;
+}
+
+.prescription-page .prescription-page-inner .warning {
+  background-color: rgba(10, 10, 255, 0.164);
+  border-radius: .3em;
+}
+
+.prescription-page .prescription-page-inner .warning h5 {
+  color: rgba(10, 10, 255, 0.603);
+  padding: 1em;
+}
+
+.prescription-page .prescription-page-inner .main-prescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.prescription-page .prescription-page-inner .main-prescription .measure-pd {
+  padding: .5em 1em 1em 1em;
+}
+
+.prescription-page .prescription-page-inner .main-prescription .measure-pd button {
+  padding: .5em;
+}
+
+.prescription-page .prescription-page-inner .main-prescription-inner {
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10em 6.5em 6.5em 6.5em 4.5em;
+      grid-template-columns: 10em 6.5em 6.5em 6.5em 4.5em;
+  margin-top: 1em;
+  border: .05em solid;
+  margin-bottom: 1em;
+}
+
+.prescription-page .prescription-page-inner .main-prescription-inner .pres-box1, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box2, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box3, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box4, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box5 {
+  padding: 1em 0;
+}
+
+.prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 form div, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box2 form div, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box3 form div, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box4 form div, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box5 form div {
+  padding: .3em;
+}
+
+.prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 form div .box2-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 form div .box3-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 form div .box4-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 form div .box5-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box2 form div .box2-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box2 form div .box3-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box2 form div .box4-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box2 form div .box5-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box3 form div .box2-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box3 form div .box3-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box3 form div .box4-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box3 form div .box5-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box4 form div .box2-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box4 form div .box3-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box4 form div .box4-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box4 form div .box5-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box5 form div .box2-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box5 form div .box3-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box5 form div .box4-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box5 form div .box5-label {
+  display: none;
+}
+
+.prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 form div label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box2 form div label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box3 form div label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box4 form div label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box5 form div label {
+  font-size: .8em !important;
+}
+
+.prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 form div select, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box2 form div select, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box3 form div select, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box4 form div select, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box5 form div select {
+  width: 100%;
+  height: 3em;
+  outline: none;
+  padding: 1em;
+}
+
+.prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 .pres-tooltip, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box2 .pres-tooltip, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box3 .pres-tooltip, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box4 .pres-tooltip, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box5 .pres-tooltip {
+  position: relative;
+}
+
+.prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 .pres-tooltip h5, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box2 .pres-tooltip h5, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box3 .pres-tooltip h5, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box4 .pres-tooltip h5, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box5 .pres-tooltip h5 {
+  text-align: center;
+  margin-top: .3em;
+}
+
+.prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 .pres-tooltip h5 i:hover, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box2 .pres-tooltip h5 i:hover, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box3 .pres-tooltip h5 i:hover, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box4 .pres-tooltip h5 i:hover, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box5 .pres-tooltip h5 i:hover {
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+}
+
+.prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 .pres-tooltip .open-tooltip, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box2 .pres-tooltip .open-tooltip, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box3 .pres-tooltip .open-tooltip, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box4 .pres-tooltip .open-tooltip, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box5 .pres-tooltip .open-tooltip {
+  background-color: white;
+  -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+  margin: 1em;
+  position: absolute;
+  padding: 1em;
+  width: 40em;
+  right: 0;
+  left: 0;
+  font-size: .8em;
+  display: none;
+}
+
+.prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 .pres-tooltip .open-tooltip.isopen-tooltip, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box2 .pres-tooltip .open-tooltip.isopen-tooltip, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box3 .pres-tooltip .open-tooltip.isopen-tooltip, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box4 .pres-tooltip .open-tooltip.isopen-tooltip, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box5 .pres-tooltip .open-tooltip.isopen-tooltip {
+  display: block;
+}
+
+.prescription-page .prescription-page-inner .main-prescription-inner .pres-box3 {
+  background-color: #e0e0e0;
+}
+
+.prescription-page .prescription-page-inner .main-prescription-inner .pres-box2, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box4 {
+  background-color: rgba(10, 10, 255, 0.164);
+}
+
+.prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 {
+  background-color: #e0e0e0;
+}
+
+.prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 form div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5em 5em;
+      grid-template-columns: 5em 5em;
+}
+
+.prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 form div label {
+  margin-top: .5em;
+}
+
+.prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 form div select {
+  width: 6.5em;
+}
+
+@media screen and (max-width: 40em) {
+  .prescription-page {
+    text-align: center;
+  }
+  .prescription-page .prism {
+    display: block;
+  }
+  .prescription-page .prism .main-prescription-inner {
+    width: 100%;
+    margin: auto;
+  }
+  .prescription-page .prism .main-prescription-inner .pres-box1 form .left, .prescription-page .prism .main-prescription-inner .pres-box1 form .right, .prescription-page .prism .main-prescription-inner .pres-box2 form .left, .prescription-page .prism .main-prescription-inner .pres-box2 form .right {
+    display: block;
+  }
+  .prescription-page .prism .prism-btn {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .prescription-page .prism .prism-btn h5 {
+    font-size: .8em;
+  }
+  .prescription-page .prism .prism-btn .box {
+    margin-right: 0 !important;
+  }
+  .prescription-page .pres-form-container {
+    width: 100%;
+  }
+  .prescription-page .pres-form-container .pres-form-style {
+    display: block;
+  }
+  .prescription-page .prescription-page-inner .main-prescription {
+    display: block;
+  }
+  .prescription-page .prescription-page-inner .main-prescription-inner {
+    width: 100% !important;
+    display: block;
+    border: none;
+  }
+  .prescription-page .prescription-page-inner .main-prescription-inner .pres-box1, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box2, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box3, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box4, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box5 {
+    border-top: 0.1em solid silver;
+  }
+  .prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 .pres-tooltip .open-tooltip, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box2 .pres-tooltip .open-tooltip, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box3 .pres-tooltip .open-tooltip, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box4 .pres-tooltip .open-tooltip, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box5 .pres-tooltip .open-tooltip {
+    width: 18em;
+  }
+  .prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 form div .box2-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 form div .box3-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 form div .box4-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 form div .box5-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box2 form div .box2-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box2 form div .box3-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box2 form div .box4-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box2 form div .box5-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box3 form div .box2-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box3 form div .box3-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box3 form div .box4-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box3 form div .box5-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box4 form div .box2-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box4 form div .box3-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box4 form div .box4-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box4 form div .box5-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box5 form div .box2-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box5 form div .box3-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box5 form div .box4-label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box5 form div .box5-label {
+    display: block;
+  }
+  .prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 form div, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 form div, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box2 form div, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box3 form div, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box4 form div, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box5 form div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 5em 8em;
+        grid-template-columns: 5em 8em;
+  }
+  .prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 form div label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 form div label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box2 form div label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box3 form div label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box4 form div label, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box5 form div label {
+    margin-top: .5em;
+  }
+  .prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 form div select, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box1 form div select, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box2 form div select, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box3 form div select, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box4 form div select, .prescription-page .prescription-page-inner .main-prescription-inner .pres-box5 form div select {
+    width: 15em;
+  }
+}
+
 /* Style the tab */
 .hover-display {
   -webkit-transform: translateX(0);
@@ -968,6 +1335,10 @@
 
 .topright:hover {
   color: red;
+}
+
+.top-selling-items {
+  margin-top: 2em;
 }
 
 .top-selling-items .shop-title {
@@ -2076,6 +2447,7 @@ body .thanks-section .thanks-section-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: white;
 }
 
 body .thanks-section .thanks-section-inner .thanks-img {
@@ -2124,10 +2496,58 @@ body .follower-section {
   width: 100%;
   margin: auto;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .follower-section p {
+  font-size: .8em;
+  padding: .4em;
+}
+
+body .follower-section .credit-card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2em;
+}
+
+body .follower-section .credit-card i {
+  color: #fca74c;
+  margin-left: 1em;
+}
+
+body .follower-section .warning {
+  color: red;
 }
 
 body .follower-section .follower-section-inner {
-  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1em;
+}
+
+body .follower-section .follower-section-inner .contactus {
+  margin-top: 2em;
+  font-style: italic;
+  font-size: 1em;
+}
+
+body .follower-section .follower-section-inner .social-follower {
+  width: 50%;
   height: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2144,12 +2564,12 @@ body .follower-section .follower-section-inner {
           align-items: center;
 }
 
-body .follower-section .follower-section-inner a {
+body .follower-section .follower-section-inner .social-follower a {
   color: #333;
 }
 
-body .follower-section .follower-section-inner a i {
-  font-size: 2em;
+body .follower-section .follower-section-inner .social-follower a i {
+  font-size: 1.5em;
   margin-left: 0.5em;
 }
 
@@ -7027,8 +7447,24 @@ body .check-filter .sort-ul.sort-open {
     margin-top: .6em;
     font-size: .9m;
   }
+  .follower-section {
+    line-height: 1.4em;
+  }
+  .follower-section .credit-card {
+    display: block !important;
+    margin: .5em 0;
+    margin-left: -.5em;
+  }
   .follower-section .follower-section-inner {
     width: 100%;
+    display: block !important;
+  }
+  .follower-section .follower-section-inner .contactus button {
+    margin-left: 3em;
+    padding: .5em 1em;
+  }
+  .follower-section .follower-section-inner .social-follower {
+    width: 100% !important;
   }
   .title {
     width: 100% !important;

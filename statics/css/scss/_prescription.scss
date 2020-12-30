@@ -1,0 +1,312 @@
+.prescription-page{
+  margin-top: 4em;
+
+  h5, h6{
+    text-align: center;
+  }
+
+  .pres-form-container{
+    width: 80%;
+    margin: auto;
+   
+
+    button{
+      padding: .5em;
+    }
+    
+    .pres-form-style{
+      display: flex;
+      
+      
+      .form-side{
+        display: flex;
+        flex-direction: column;
+
+        .pres-form{
+          padding: .5em;
+    
+            input{
+            width: 100%;
+            outline: none;
+            border-radius: .3em;
+            padding-left: 1em;
+            margin-top: .5em;
+            height: 2.5em;
+          }
+        }
+      }
+    
+    }
+  }
+  .prism{
+    display: flex;
+    flex-direction: column;
+
+    .main-prescription-inner{
+      width: 60% !important;
+      margin: auto;
+
+      
+      grid-template-columns: 16.8em 12em !important;
+
+      .pres-box1, .pres-box2{
+        form{
+          .left, .right{
+            display: flex;
+          }
+        }
+      }
+    }
+
+    .prism-btn{
+     display: flex;
+     justify-content: center;
+     margin: auto;
+     margin-top: 1em;
+     width: 50%;
+     padding: .5em;
+
+     &:hover{
+       background-color: $main-green;
+       color: $main-white;
+     }
+
+      .box{
+        display: block;
+        width: 1em;
+        height: 1em;
+        border: .07em solid;
+        margin-right: .5em;
+      }
+    }
+  }
+
+  .prescription-page-inner{
+    width: 90%;
+    margin: auto;
+
+    .warning{
+      background-color: rgba(10, 10, 255, 0.164);
+      border-radius: .3em;
+
+
+      h5{
+        color:  rgba(10, 10, 255, 0.603);
+        padding: 1em;
+      }
+    }
+    .main-prescription{
+      display: flex;
+
+      .measure-pd{
+        padding: .5em 1em 1em 1em;
+
+        button{
+          padding: .5em;
+        }
+      }
+    }
+    .main-prescription-inner{
+      width: 80%;
+      display: grid;
+      grid-template-columns: 10em 6.5em 6.5em 6.5em 4.5em;
+      margin-top: 1em;
+      border: .05em solid;
+  
+      margin-bottom: 1em;
+      
+
+      .pres-box1, .pres-box2, .pres-box3, .pres-box4, .pres-box5{
+        padding: 1em 0;
+
+        form{
+         div{
+           padding: .3em;
+           .box2-label, .box3-label, .box4-label, .box5-label{
+             display: none;
+           }
+        label{
+             font-size: .8em !important;
+           }
+          select{
+            width: 100%;
+            height: 3em;
+            outline: none;
+            padding: 1em;
+              
+         }
+     
+        }
+
+      }
+
+        .pres-tooltip{
+          position: relative;
+
+          h5{
+            text-align: center;
+            margin-top: .3em;
+
+            i{
+              &:hover{
+                background-color: black;
+                border-radius: 50%;
+                color: $main-white;
+              }
+            }
+          }
+
+          .open-tooltip{
+            background-color: $main-white;
+            box-shadow: 0 0 1em rgba(0,0,0,0.2);
+            margin: 1em;
+            position: absolute;
+            padding: 1em;
+            width: 40em;
+            right: 0;
+            left: 0;
+            font-size: .8em;
+            display: none;
+       
+            &.isopen-tooltip{
+              display: block;
+            }
+
+          }
+         
+        }
+      }
+
+      .pres-box3{
+        background-color: rgb(224, 224, 224);
+      }
+
+      .pres-box2, .pres-box4{
+        background-color: rgba(10, 10, 255, 0.164);
+      } 
+
+      .pres-box1{
+        background-color: rgb(224, 224, 224);
+        
+        form{
+          div{
+            display: grid;
+            grid-template-columns: 5em 5em ;
+
+            label{
+              margin-top: .5em;
+            }
+
+            select{
+              width: 6.5em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:40em){
+  .prescription-page{
+    text-align: center;
+
+    .prism{
+      display: block;
+      .main-prescription-inner{
+        width: 100%;
+        margin: auto;
+  
+  
+        .pres-box1, .pres-box2{
+          form{
+            .left, .right{
+              display: block;
+            }
+          }
+        }
+      }
+
+      .prism-btn{
+        
+        width: 100%;
+        margin-bottom: 1em;
+
+        h5{
+          font-size: .8em;
+        }
+
+        .box{
+          margin-right: 0 !important;
+        }
+      }
+     
+    }
+    
+    .pres-form-container{
+      width: 100%;
+      .pres-form-style{
+        display: block;
+      }
+    }
+    .prescription-page-inner{
+      .main-prescription{
+       
+        display: block;
+
+        
+      }
+
+      
+      .main-prescription-inner{
+        width: 100% !important;
+        display: block;
+        border: none;
+
+
+        .pres-box1, .pres-box2, .pres-box3, .pres-box4, .pres-box5{
+          border-top: .1em solid rgb(192, 192, 192);
+
+          .pres-tooltip{
+            .open-tooltip{
+              width: 18em;
+            }
+          }
+
+          form{
+            div{
+             
+              .box2-label, .box3-label, .box4-label, .box5-label{
+                display: block;
+              }
+
+            }
+            
+          }  
+
+        }
+
+        
+
+        .pres-box1, .pres-box1, .pres-box2, .pres-box3, .pres-box4, .pres-box5{
+          
+          
+          form{
+            div{
+              display: grid;
+              grid-template-columns: 5em 8em ;
+  
+              label{
+                margin-top: .5em;
+              }
+  
+              select{
+                width: 15em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

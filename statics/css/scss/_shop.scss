@@ -137,7 +137,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
     padding: .1em;
-    grid-gap:1.5em;
+    grid-gap: 1.5em;
     font-size: 1em;
     text-align: center;
    
@@ -149,6 +149,7 @@
      height: 15em;
      justify-content: center;
      transition: all .5s linear;
+     margin-bottom: -3em;
      
      .hover-display{
       display: flex ;
@@ -174,11 +175,7 @@
       transform: translateX(0%);
     }
    
-     & > * + *{
-       margin-top: 1em;
-     }
-
-     
+   
    
      .shop_item_info{
        text-align: center;

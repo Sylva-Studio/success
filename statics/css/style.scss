@@ -5,6 +5,8 @@
 @import "./scss/location";
 @import "./scss/single-item";
 @import "./scss/cart";
+@import "./scss/about-us";
+@import "./scss/prescription";
 @import "./scss/animate";
 @import "./scss/specials";
 @import "./scss/filter";
@@ -37,7 +39,7 @@
   z-index: -1;
   background-color: rgb(253, 253, 253);
   
-
+  
 .search-page{
   height: 90vh;
   width: 100%;
@@ -699,6 +701,7 @@
 
     .thanks-section-inner {
       display: flex;
+      color: $main-white;
 
       .thanks-img {
         flex: 1;
@@ -744,9 +747,42 @@
     width: 100%;
     margin: auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    p{
+      font-size: .8em;
+      padding: .4em;
+    }
+
+    .credit-card{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+      i{
+        color: $main-style;
+        margin-left: 1em;
+      }
+    }
+
+    .warning{
+      color: red;
+    }
+    
 
     .follower-section-inner {
-      width: 80%;
+      display: flex;
+      margin-bottom: 1em;
+
+      .contactus{
+        margin-top: 2em;
+        font-style: italic;
+        font-size: 1em;
+      }
+     .social-follower{
+      width: 50%;
       height: 10%;
       display: flex;
       flex-direction: column;
@@ -756,10 +792,11 @@
       a {
         color: #333;
         i {
-          font-size: 2em;
+          font-size: 1.5em;
           margin-left: 0.5em;
         }
       }
+     }
     }
   }
 
@@ -1302,8 +1339,27 @@
     font-size: .9m;
   }
   .follower-section{
+    line-height: 1.4em;
+    .credit-card{
+      display: block !important;
+      margin: .5em 0;
+      margin-left: -.5em;
+    }
   .follower-section-inner{
     width: 100%;
+    display: block !important;
+
+    .contactus{
+      button{
+        margin-left: 3em;
+        padding: .5em 1em;
+      }
+    }
+
+    .social-follower{
+      width: 100% !important;
+     
+    }
    
   }
   }
