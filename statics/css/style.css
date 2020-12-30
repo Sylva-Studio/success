@@ -847,6 +847,7 @@
 
 .for-about-us .hero-image img {
   height: 18em;
+  width: 100%;
 }
 
 .for-about-us .title-move {
@@ -923,6 +924,10 @@
   .column {
     width: 100%;
     display: block;
+  }
+  .for-about-us {
+    display: block;
+    height: auto;
   }
 }
 
@@ -7390,7 +7395,7 @@ body .check-filter .sort-ul.sort-open {
     padding: 0 1em 0;
   }
   body button {
-    padding: 0;
+    padding: .5em 1em;
   }
   body .best-sellers {
     height: 100vh;

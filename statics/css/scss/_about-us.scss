@@ -8,6 +8,7 @@
   .hero-image{
    img{
     height: 18em ;
+    width: 100%;
    }
   }
   .title-move{
@@ -81,5 +82,11 @@
   .column {
     width: 100%;
     display: block;
+
+   
+  }
+  .for-about-us{
+    display: block;
+    height: auto;
   }
 }
