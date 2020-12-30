@@ -7329,8 +7329,9 @@ body .check-filter .sort-ul.sort-open {
     font-size: .8em;
   }
   body .hero-page img {
-    margin-top: 10em;
+    margin-top: 3em;
     width: 100% !important;
+    float: right;
     margin-bottom: 3em;
   }
   body .hero-page .hero-title {
